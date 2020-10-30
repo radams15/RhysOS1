@@ -24,19 +24,21 @@ void Interrupts::interrupt_acknowledge(int i){
 }
 
 void Interrupts::init(){
-    int i;
-
     Pic::init(32, 40);
+
+    int i;
 
     for(i = 32; i < 48; i++) {
         interrupt_disable(i);
         interrupt_acknowledge(i);
     }
+
     for(i = 0; i < 32; i++) {
         handler_table[i] = unknown_exception;
         spurious[i] = 0;
         count[i] = 0;
     }
+
     for(i = 32; i < 48; i++) {
         handler_table[i] = unknown_hardware;
         spurious[i] = 0;
@@ -44,6 +46,8 @@ void Interrupts::init(){
     }
 
     unblock();
+
+    Serial::write("Interrupts initialised and unblocked!\n");
 }
 
 void Interrupts::handle_interrupt(int i, int code){

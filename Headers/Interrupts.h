@@ -7,6 +7,7 @@
 
 #include "Types.h"
 #include "IO.cpp"
+#include "Serial.h"
 
 #define NUM_INTERRUPTS 30
 

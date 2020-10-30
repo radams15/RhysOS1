@@ -1,2 +1,39 @@
 Serial Initialised!
 Display Initialised!
+PIC Initialised!
+Disable Pic 1 From Master PIC
+Acknowledge IRQ: 1
+Disable Pic 2 From Master PIC
+Acknowledge IRQ: 2
+Disable Pic 3 From Master PIC
+Acknowledge IRQ: 3
+Disable Pic 4 From Master PIC
+Acknowledge IRQ: 4
+Disable Pic 5 From Master PIC
+Acknowledge IRQ: 5
+Disable Pic 6 From Master PIC
+Acknowledge IRQ: 6
+Disable Pic 7 From Master PIC
+Acknowledge IRQ: 7
+Disable Pic 0 From Slave PIC
+Acknowledge IRQ: 8
+Disable Pic 1 From Slave PIC
+Acknowledge IRQ: 9
+Disable Pic 2 From Slave PIC
+Acknowledge IRQ: 10
+Disable Pic 3 From Slave PIC
+Acknowledge IRQ: 11
+Disable Pic 4 From Slave PIC
+Acknowledge IRQ: 12
+Disable Pic 5 From Slave PIC
+Acknowledge IRQ: 13
+Disable Pic 6 From Slave PIC
+Acknowledge IRQ: 14
+Disable Pic 7 From Slave PIC
+Acknowledge IRQ: 15
+Interrupts initialised and unblocked!
+Enable Pic 1 From Master PIC
+
+
+###############Start User###############
+

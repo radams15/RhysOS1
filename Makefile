@@ -1,4 +1,4 @@
-CXX=g++
+CXX=g++ -g
 ASM=nasm
 ISO_NAME=RhysOS
 

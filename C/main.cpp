@@ -16,13 +16,15 @@ int main(){
 	Display::init(7, 0); // size, background colour, foreground colour
 	Serial::write("Display Initialised!\n");
 
-    /*Interrupts::init();
+    Interrupts::init();
     Display::println("Interrupt Init Complete!");
 
     Interrupts::register_handler(33, key_press);
     Interrupts::enable(33);
 
-    Display::println("Keyboard Ready");*/
+    Display::println("Keyboard Ready");
+
+    Serial::write("\n\n###############Start User###############\n\n");
 
     while(kernel_loop()){}
 
