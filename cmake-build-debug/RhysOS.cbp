@@ -45,6 +45,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/rhys/scripts/Projects/RhysOS2/Headers"/>
+					<Add directory="/home/rhys/scripts/Projects/RhysOS2/C"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
@@ -67,6 +68,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/rhys/scripts/Projects/RhysOS2/Headers"/>
+					<Add directory="/home/rhys/scripts/Projects/RhysOS2/C"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>

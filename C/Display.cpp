@@ -1,59 +1,69 @@
-#include "constants.cpp"
 #include "Display.h"
 
-#define DISP_SIZ 80
+#define DISPLAY_MEM_START (unsigned short*) 0xB8000;
 
-void printc(char c);
+#define HEIGHT 25
+#define WIDTH 80
 
-unsigned short* display_mem;
-unsigned int cur_loc = 0; // cursor location
+void Display::carriage_return(){
+    cursor = 0;
+}
 
-void display_shift(){
-    unsigned int i;
+void Display::newline() {
+    //unsigned int i;
 
-    for (i=DISP_SIZ-1 ; i < DISP_SIZ-80 ; i++){
-        display_mem[i] = display_mem[i+80];
+    /*for (i = size - 1; i < size - WIDTH; i++) {
+        display_mem[i] = display_mem[i + WIDTH];
     }
 
-    for (i=DISP_SIZ-1 ; i > DISP_SIZ-80 ; i--){
+    for (i = size - 1; i > size - WIDTH; i--) {
         display_mem[i] = NULL;
+    }*/
+
+    /*for(int i=0 ; i<WIDTH ; i++){
+        display_mem[i] = (((this->bg_col << 4) & 0xF0) | (this->fg_col & 0x0F)) << 8 | NULL;
+    }*/
+
+    for (int i = 0; i < WIDTH; i++) {
+        display_mem[i + WIDTH] = display_mem[i]; // add width to char to wrap around
+        display_mem[i] = text_col | NULL;
     }
 }
 
-int display_init(unsigned int size, unsigned char bg_col, unsigned char fg_col){
-    display_mem = (unsigned short*) 0xB8000;
-    unsigned char BackgroundColour = bg_col; // Yellow background - distinct colour from the assembly code
-    unsigned char ForegroundColour = fg_col; // Black text
-    unsigned char Colour = ((BackgroundColour << 4) & 0xF0) | (ForegroundColour & 0x0F); // Calculate combined colour value
-    unsigned int DisplaySize = size; // Number of characters cells to fill with colour = 80 * 25 = 2000
-    unsigned int i = 0; // Start at first character of the display
+Display::Display(unsigned short bg_col, unsigned short fg_col){
+    //the low 4 bits represent the character color and the high 4 bits represent the background colour
 
-    while (i < DisplaySize) // Loop through all characters
-    {
-        display_mem[i++] = (unsigned short)Colour << 8 | NULL;
-    }
-    printc('\n');
-    return 0;
-}
+    this->bg_col = bg_col << 4; // << 4 to make it the background colour
+    this->fg_col = fg_col; // no shift to make foreground colour
 
-void printc(char c){
-    if (cur_loc == DISP_SIZ || c == '\n'){
-        display_shift();
-        cur_loc = 80;
-    }
-    if(c != '\n'){
-        display_mem[cur_loc++] = (unsigned short) (0x0200 | c);
+    display_mem = DISPLAY_MEM_START;
+
+    text_col = (this->bg_col | this->fg_col) << 8; // Combine bg and fg, and shift left 8 times to allow char to fit after
+    // Number of characters cells to fill with colour = 80 * 25 = 2000
+
+    for(int i=0 ; i<WIDTH*HEIGHT ; i++){ // Loop through all characters
+        display_mem[i] = text_col | NULL;
     }
 }
 
-void print(const char *text){
-    int i;
-    for (i=0 ; text[i] != NULL ; i++){
+void Display::printc(const char c) {
+    if (cursor == HEIGHT || c == '\n') {
+        newline();
+        carriage_return();
+    }
+    if (c != '\n') {
+        display_mem[cursor] = text_col | c;
+        cursor++;
+    }
+}
+
+void Display::print(const char* text){
+    for (int i=0; text[i] != NULL; i++) {
         printc(text[i]);
     }
 }
 
-void println(char *text){
+void Display::println(const char* text) {
     print(text);
     print("\n");
 }

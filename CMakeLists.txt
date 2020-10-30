@@ -3,6 +3,6 @@ project(RhysOS)
 
 set(CMAKE_C_STANDARD 11)
 
-include_directories(Headers)
+include_directories(Headers C)
 
 add_executable(RhysOS C/main.cpp)

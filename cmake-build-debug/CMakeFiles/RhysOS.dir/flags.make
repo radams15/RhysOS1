@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/rhys/scripts/Projects/RhysOS2/Headers 
+CXX_INCLUDES = -I/home/rhys/scripts/Projects/RhysOS2/Headers -I/home/rhys/scripts/Projects/RhysOS2/C 
 

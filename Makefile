@@ -9,7 +9,7 @@ gen: compile geniso clean
 
 compile:
 	${ASM} -g -f elf -o Kernel.o "asm/Kernel.asm" &&\
-	${CXX} Kernel.o ${MAIN} -o Kernel.bin -T linker.ld -nostartfiles -nostdlib -m32 -IHeaders
+	${CXX} Kernel.o ${MAIN} -o Kernel.bin -T linker.ld -nostartfiles -nostdlib -m32 -IHeaders -IC
 
 geniso:
 	mv Kernel.bin ISO/Kernel.bin
