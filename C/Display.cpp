@@ -1,5 +1,17 @@
+#include <Serial.h>
 #include "Display.h"
 
+namespace Display{ // can't set variables in header file
+    unsigned short bg_col;
+    unsigned short fg_col;
+
+    unsigned short text_col; // combined colour values
+
+    unsigned short* display_mem;
+    unsigned int cursor = 0; // cursor location
+
+    unsigned int total_size = WIDTH*HEIGHT;
+}
 
 void Display::carriage_return(){
     cursor = 0;
@@ -16,13 +28,14 @@ void Display::newline() {
 
 void Display::init(unsigned short bg_col_in, unsigned short fg_col_in){
     //the low 4 bits represent the character color and the high 4 bits represent the background colour
-
     bg_col = bg_col_in << 4; // << 4 to make it the background colour
     fg_col = fg_col_in; // no shift to make foreground colour
 
     display_mem = DISPLAY_MEM_START;
 
     text_col = (bg_col | fg_col) << 8; // Combine bg and fg, and shift left 8 times to allow char to fit after
+
+    Serial::write("Display Initialised!\n");
 
     for(int i=0 ; i<WIDTH*HEIGHT ; i++){ // Loop through all characters
         display_mem[i] = text_col | NULL;
@@ -54,10 +67,6 @@ void Display::printc(char c) {
     }
 }
 
-char chr(uint32 code){
-    return code^0b00110000;
-}
-
 void Display::printi(uint32 num){
     uint32 num_temp = num;
     uint32 size = 0;
@@ -80,9 +89,9 @@ void Display::printi(uint32 num){
 
         if(power > 10) {
             i = p / (power / 10);
-            Display::printc(chr(i));
+            Display::printc(Ascii::chr(i));
         }else {
-            Display::printc(chr(p));
+            Display::printc(Ascii::chr(p));
             break;
         }
 

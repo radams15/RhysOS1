@@ -5,7 +5,8 @@ BITS 32
 
 GLOBAL _Kernel_Start:function
 
-EXTERN main ; main c file
+extern main ; main c file
+%include "Interrupts.asm"
 
 SECTION .text
 
@@ -137,7 +138,7 @@ Boot_FlushCsGDT:
 	; END - Set Screen Colour
 	
 	call main ; call c main function
-	
+
 	jmp Halt
 	
 HandleNoMultiboot:

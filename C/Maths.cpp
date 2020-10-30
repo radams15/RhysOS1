@@ -6,7 +6,7 @@
 
 uint32 Maths::pow(uint32 num, uint32 power){
     uint32 out = num;
-    for(int i=0 ; i<power ; i++){
+    for(uint32 i=0 ; i<power ; i++){
         out *= num;
     }
 

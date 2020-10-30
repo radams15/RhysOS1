@@ -1,10 +1,10 @@
-#include "Display.cpp"
-#include "Interrupts.cpp"
+#include "Display.h"
+#include "Serial.h"
+#include "Pic.h"
 
-#include "Serial.cpp"
-
-void key_press(int interrupt, int code){
-    Display::println("KEY");
+extern "C" void key_press(int interrupt, int code){
+    Display::print("KEY\n");
+    Serial::write("KEY\n");
 }
 
 bool kernel_loop(){
@@ -13,22 +13,15 @@ bool kernel_loop(){
 
 int main(){
     Serial::init();
-	Display::init(7, 0); // size, background colour, foreground colour
-	Serial::write("Display Initialised!\n");
+	Display::init(7, 0);
 
-    Interrupts::init();
-    Display::println("Interrupt Init Complete!");
-
-    Interrupts::register_handler(33, key_press);
-    Interrupts::enable(33);
-
-    Display::println("Keyboard Ready");
+    Serial::write("Keyboard Ready!\n");
 
     Serial::write("\n\n###############Start User###############\n\n");
 
     while(kernel_loop()){}
 
     Display::println("Execution Has Stopped");
-    Interrupts::block();
-    IO::halt();
+
+    return 0;
 }

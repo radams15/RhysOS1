@@ -2,7 +2,19 @@ cmake_minimum_required(VERSION 3.16)
 project(RhysOS)
 
 set(CMAKE_C_STANDARD 11)
+set(CMAKE_SOURCE_DIR C)
 
-include_directories(Headers C)
+include_directories(C)
+include_directories(Headers)
 
-add_executable(RhysOS C/main.cpp)
+add_executable(
+    RhysOS
+    C/Ascii.cpp
+    C/Display.cpp
+    C/Interrupts.cpp
+    C/Io.cpp
+    C/main.cpp
+    C/Maths.cpp
+    C/Pic.cpp
+    C/Serial.cpp
+)

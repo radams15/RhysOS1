@@ -1,65 +1,73 @@
-//
-// Created by rhys on 30/10/2020.
-//
-
 #include "Pic.h"
 
-void Pic::init(uint8 start, uint8 end){
-    IO::outb(ICW1, CONTROL_MASTER);
-    IO::outb(start, DATA_MASTER);
-    IO::outb(1 << 2, DATA_MASTER);
-    IO::outb(ICW4_MASTER, DATA_MASTER);
-    IO::outb(~(1 << 2), DATA_MASTER);
+#define PIC1		0x20		/* IO base address for master PIC */
+#define PIC2		0xA0		/* IO base address for slave PIC */
+#define PIC1_COMMAND	PIC1
+#define PIC1_DATA	(PIC1+1)
+#define PIC2_COMMAND	PIC2
+#define PIC2_DATA	(PIC2+1)
 
-    IO::outb(ICW1, CONTROL_SLAVE);
-    IO::outb(end, DATA_SLAVE);
-    IO::outb(2, DATA_SLAVE);
-    IO::outb(ICW4_SLAVE, DATA_SLAVE);
-    IO::outb(~0, DATA_SLAVE);
-    Serial::write("PIC Initialised!\n");
+#define ICW1_ICW4	0x01		/* ICW4 (not) needed */
+#define ICW1_SINGLE	0x02		/* Single (cascade) mode */
+#define ICW1_INTERVAL4	0x04		/* Call address interval 4 (8) */
+#define ICW1_LEVEL	0x08		/* Level triggered (edge) mode */
+#define ICW1_INIT	0x10		/* Initialization - required! */
+
+#define ICW4_8086	0x01		/* 8086/88 (MCS-80/85) mode */
+#define ICW4_AUTO	0x02		/* Auto (normal) EOI */
+#define ICW4_BUF_SLAVE	0x08		/* Buffered mode/slave */
+#define ICW4_BUF_MASTER	0x0C		/* Buffered mode/master */
+#define ICW4_SFNM	0x10		/* Special fully nested (not) */
+
+void outb(int8 val, int32 port){
+    return Io::outb(port, val);
 }
 
-void Pic::enable(uint8 irq){
-    uint8 mask;
 
-    if(irq < 8) { // use master PIC
-        mask = IO::inb(DATA_MASTER);
-        mask = mask & ~(1 << irq);
-        IO::outb(mask, DATA_MASTER);
-        Serial::write("Enable Pic %d From Master PIC\n", irq);
-    } else { // use slave PIC
-        irq -= 8;
-        mask = IO::inb(DATA_SLAVE);
-        mask = mask & ~(1 << irq);
-        IO::outb(mask, DATA_SLAVE);
-        enable(2);
-        Serial::write("Enable Pic %d From Slave PIC\n", irq);
-    }
+void pic_init(uint32 start, uint32 end){
+    unsigned char a1, a2;
+
+    a1 = Io::inb(PIC1_DATA);                        // save masks
+    a2 = Io::inb(PIC2_DATA);
+
+    outb(PIC1_COMMAND, ICW1_INIT | ICW1_ICW4);  // starts the initialization sequence (in cascade mode)
+    outb(PIC2_COMMAND, ICW1_INIT | ICW1_ICW4);
+    outb(PIC1_DATA, start);                 // ICW2: Master PIC vector offset
+    outb(PIC2_DATA, end);                 // ICW2: Slave PIC vector offset
+    outb(PIC1_DATA, 4);                       // ICW3: tell Master PIC that there is a slave PIC at IRQ2 (0000 0100)
+    outb(PIC2_DATA, 2);                       // ICW3: tell Slave PIC its cascade identity (0000 0010)
+
+    outb(PIC1_DATA, ICW4_8086);
+    outb(PIC2_DATA, ICW4_8086);
+
+    outb(PIC1_DATA, a1);   // restore saved masks.
+    outb(PIC2_DATA, a2);
 }
 
-void Pic::disable(uint8 irq){
-    uint8 mask;
+void pic_mask(unsigned char IRQline) {
+    uint16 port;
+    uint8 value;
 
-    if(irq < 8) { // use master PIC
-        mask = IO::inb(DATA_MASTER);
-        mask = mask | (1 << irq);
-        IO::outb(mask, DATA_MASTER);
-        Serial::write("Disable Pic %d From Master PIC\n", irq);
-    } else { // use slave PIC
-        irq -= 8;
-        mask = IO::inb(DATA_SLAVE);
-        mask = mask | (1 << irq);
-        IO::outb(mask, DATA_SLAVE);
-        Serial::write("Disable Pic %d From Slave PIC\n", irq);
-    }
-}
-
-void Pic::acknowledge(uint8 irq){
-    Serial::write("Acknowledge IRQ: %d\n", irq);
-    if(irq >= 8) {
-        IO::outb(ACK_SPECIFIC + (irq - 8), CONTROL_SLAVE);
-        IO::outb(ACK_SPECIFIC + (2), CONTROL_MASTER);
+    if(IRQline < 8) {
+        port = PIC1_DATA;
     } else {
-        IO::outb(ACK_SPECIFIC + irq, CONTROL_MASTER);
+        port = PIC2_DATA;
+        IRQline -= 8;
     }
+    value = Io::inb(port) | (1 << IRQline);
+    outb(port, value);
+}
+
+void pic_unmask(unsigned char IRQline) {
+    uint16 port;
+    uint8 value;
+
+    if(IRQline < 8) {
+        port = PIC1_DATA;
+    } else {
+        port = PIC2_DATA;
+        IRQline -= 8;
+    }
+    value = Io::inb(port) & ~(1 << IRQline);
+    outb(port, value);
 }

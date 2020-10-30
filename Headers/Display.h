@@ -6,7 +6,8 @@
 #define RHYSOS_DISPLAY_H
 
 #include "Types.h"
-#include "Maths.cpp"
+#include "Maths.h"
+#include "Ascii.h"
 
 #include <stdarg.h>
 
@@ -17,16 +18,6 @@
 #define WIDTH 80
 
 namespace Display {
-    unsigned short bg_col;
-    unsigned short fg_col;
-
-    unsigned short text_col; // combined colour values
-
-    unsigned short* display_mem;
-    unsigned int cursor = 0; // cursor location
-
-    unsigned int total_size = WIDTH*HEIGHT;
-
     void carriage_return();
     void move_down();
     void newline();

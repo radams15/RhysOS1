@@ -44,8 +44,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/rhys/scripts/Projects/RhysOS2/Headers"/>
 					<Add directory="/home/rhys/scripts/Projects/RhysOS2/C"/>
+					<Add directory="/home/rhys/scripts/Projects/RhysOS2/Headers"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
@@ -67,8 +67,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/rhys/scripts/Projects/RhysOS2/Headers"/>
 					<Add directory="/home/rhys/scripts/Projects/RhysOS2/C"/>
+					<Add directory="/home/rhys/scripts/Projects/RhysOS2/Headers"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
@@ -84,6 +84,27 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Ascii.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Display.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Interrupts.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Io.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Maths.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Pic.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Serial.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/main.cpp">
 			<Option target="RhysOS"/>
 		</Unit>

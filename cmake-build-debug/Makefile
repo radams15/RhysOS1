@@ -143,6 +143,195 @@ RhysOS/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/build
 .PHONY : RhysOS/fast
 
+C/Ascii.o: C/Ascii.cpp.o
+
+.PHONY : C/Ascii.o
+
+# target to build an object file
+C/Ascii.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Ascii.cpp.o
+.PHONY : C/Ascii.cpp.o
+
+C/Ascii.i: C/Ascii.cpp.i
+
+.PHONY : C/Ascii.i
+
+# target to preprocess a source file
+C/Ascii.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Ascii.cpp.i
+.PHONY : C/Ascii.cpp.i
+
+C/Ascii.s: C/Ascii.cpp.s
+
+.PHONY : C/Ascii.s
+
+# target to generate assembly for a file
+C/Ascii.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Ascii.cpp.s
+.PHONY : C/Ascii.cpp.s
+
+C/Display.o: C/Display.cpp.o
+
+.PHONY : C/Display.o
+
+# target to build an object file
+C/Display.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Display.cpp.o
+.PHONY : C/Display.cpp.o
+
+C/Display.i: C/Display.cpp.i
+
+.PHONY : C/Display.i
+
+# target to preprocess a source file
+C/Display.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Display.cpp.i
+.PHONY : C/Display.cpp.i
+
+C/Display.s: C/Display.cpp.s
+
+.PHONY : C/Display.s
+
+# target to generate assembly for a file
+C/Display.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Display.cpp.s
+.PHONY : C/Display.cpp.s
+
+C/Interrupts.o: C/Interrupts.cpp.o
+
+.PHONY : C/Interrupts.o
+
+# target to build an object file
+C/Interrupts.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Interrupts.cpp.o
+.PHONY : C/Interrupts.cpp.o
+
+C/Interrupts.i: C/Interrupts.cpp.i
+
+.PHONY : C/Interrupts.i
+
+# target to preprocess a source file
+C/Interrupts.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Interrupts.cpp.i
+.PHONY : C/Interrupts.cpp.i
+
+C/Interrupts.s: C/Interrupts.cpp.s
+
+.PHONY : C/Interrupts.s
+
+# target to generate assembly for a file
+C/Interrupts.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Interrupts.cpp.s
+.PHONY : C/Interrupts.cpp.s
+
+C/Io.o: C/Io.cpp.o
+
+.PHONY : C/Io.o
+
+# target to build an object file
+C/Io.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Io.cpp.o
+.PHONY : C/Io.cpp.o
+
+C/Io.i: C/Io.cpp.i
+
+.PHONY : C/Io.i
+
+# target to preprocess a source file
+C/Io.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Io.cpp.i
+.PHONY : C/Io.cpp.i
+
+C/Io.s: C/Io.cpp.s
+
+.PHONY : C/Io.s
+
+# target to generate assembly for a file
+C/Io.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Io.cpp.s
+.PHONY : C/Io.cpp.s
+
+C/Maths.o: C/Maths.cpp.o
+
+.PHONY : C/Maths.o
+
+# target to build an object file
+C/Maths.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Maths.cpp.o
+.PHONY : C/Maths.cpp.o
+
+C/Maths.i: C/Maths.cpp.i
+
+.PHONY : C/Maths.i
+
+# target to preprocess a source file
+C/Maths.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Maths.cpp.i
+.PHONY : C/Maths.cpp.i
+
+C/Maths.s: C/Maths.cpp.s
+
+.PHONY : C/Maths.s
+
+# target to generate assembly for a file
+C/Maths.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Maths.cpp.s
+.PHONY : C/Maths.cpp.s
+
+C/Pic.o: C/Pic.cpp.o
+
+.PHONY : C/Pic.o
+
+# target to build an object file
+C/Pic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Pic.cpp.o
+.PHONY : C/Pic.cpp.o
+
+C/Pic.i: C/Pic.cpp.i
+
+.PHONY : C/Pic.i
+
+# target to preprocess a source file
+C/Pic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Pic.cpp.i
+.PHONY : C/Pic.cpp.i
+
+C/Pic.s: C/Pic.cpp.s
+
+.PHONY : C/Pic.s
+
+# target to generate assembly for a file
+C/Pic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Pic.cpp.s
+.PHONY : C/Pic.cpp.s
+
+C/Serial.o: C/Serial.cpp.o
+
+.PHONY : C/Serial.o
+
+# target to build an object file
+C/Serial.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Serial.cpp.o
+.PHONY : C/Serial.cpp.o
+
+C/Serial.i: C/Serial.cpp.i
+
+.PHONY : C/Serial.i
+
+# target to preprocess a source file
+C/Serial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Serial.cpp.i
+.PHONY : C/Serial.cpp.i
+
+C/Serial.s: C/Serial.cpp.s
+
+.PHONY : C/Serial.s
+
+# target to generate assembly for a file
+C/Serial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Serial.cpp.s
+.PHONY : C/Serial.cpp.s
+
 C/main.o: C/main.cpp.o
 
 .PHONY : C/main.o
@@ -179,6 +368,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... RhysOS"
+	@echo "... C/Ascii.o"
+	@echo "... C/Ascii.i"
+	@echo "... C/Ascii.s"
+	@echo "... C/Display.o"
+	@echo "... C/Display.i"
+	@echo "... C/Display.s"
+	@echo "... C/Interrupts.o"
+	@echo "... C/Interrupts.i"
+	@echo "... C/Interrupts.s"
+	@echo "... C/Io.o"
+	@echo "... C/Io.i"
+	@echo "... C/Io.s"
+	@echo "... C/Maths.o"
+	@echo "... C/Maths.i"
+	@echo "... C/Maths.s"
+	@echo "... C/Pic.o"
+	@echo "... C/Pic.i"
+	@echo "... C/Pic.s"
+	@echo "... C/Serial.o"
+	@echo "... C/Serial.i"
+	@echo "... C/Serial.s"
 	@echo "... C/main.o"
 	@echo "... C/main.i"
 	@echo "... C/main.s"

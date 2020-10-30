@@ -5,17 +5,17 @@
 #include "Serial.h"
 
 void Serial::init(){
-    IO::outb(0x80, PORT + 3);    // Enable DLAB (set baud rate divisor)
-    IO::outb(0x03, PORT + 0);    // Set divisor to 3 (lo byte) 38400 baud
-    IO::outb(0x00, PORT + 1);    //                  (hi byte)
-    IO::outb(0x03, PORT + 3);    // 8 bits, no parity, one stop bit
-    IO::outb(0xC7, PORT + 2);    // Enable FIFO, clear them, with 14-byte threshold
+    Io::outb(PORT + 3, 0x80);    // Enable DLAB (set baud rate divisor)
+    Io::outb(PORT + 0, 0x03);    // Set divisor to 3 (lo byte) 38400 baud
+    Io::outb(PORT + 1, 0x00);    //                  (hi byte)
+    Io::outb(PORT + 3, 0x03);    // 8 bits, no parity, one stop bit
+    Io::outb(PORT + 2, 0xC7);    // Enable FIFO, clear them, with 14-byte threshold
 
     write("Serial Initialised!\n");
 }
 
 bool Serial::send_buf_empty(){
-    return IO::inb(PORT + 5) & 0x20;
+    return Io::inb(PORT + 5) & 0x20;
 }
 
 void Serial::writec(unsigned char c){
@@ -23,7 +23,7 @@ void Serial::writec(unsigned char c){
         // wait for serial buffer to empty
     }
 
-    IO::outb(c, PORT);
+    Io::outb(PORT, c);
 }
 
 void Serial::writei(uint32 num){
@@ -48,9 +48,9 @@ void Serial::writei(uint32 num){
 
         if(power > 10) {
             i = p / (power / 10);
-            writec(chr(i));
+            writec(Ascii::chr(i));
         }else {
-            writec(chr(p));
+            writec(Ascii::chr(p));
             break;
         }
 

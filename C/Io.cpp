@@ -1,15 +1,15 @@
 //
 // Created by rhys on 30/10/2020.
 //
-#include "IO.h"
+#include "Io.h"
 
-static inline void IO::outb(int8 val, int32 port){
+void Io::outb(int32 port, int8 val){
     asm volatile(
             "outb %0, %1" : : "a"(val), "Nd"(port)
     );
 }
 
-static inline uint8 IO::inb(int32 port){
+uint8 Io::inb(int32 port){
     uint8 out;
 
     asm volatile(
@@ -21,6 +21,6 @@ static inline uint8 IO::inb(int32 port){
     return out;
 }
 
-static inline void IO::halt(){
+void Io::halt(){
     asm("hlt");
 }
