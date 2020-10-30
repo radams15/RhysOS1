@@ -1,33 +1,16 @@
 #include "Display.h"
 
-#define DISPLAY_MEM_START (unsigned short*) 0xB8000;
-
-#define HEIGHT 25
-#define WIDTH 80
-
 void Display::carriage_return(){
     cursor = 0;
 }
 
+void Display::move_down(){
+    display_mem = display_mem+WIDTH;
+}
+
 void Display::newline() {
-    //unsigned int i;
-
-    /*for (i = size - 1; i < size - WIDTH; i++) {
-        display_mem[i] = display_mem[i + WIDTH];
-    }
-
-    for (i = size - 1; i > size - WIDTH; i--) {
-        display_mem[i] = NULL;
-    }*/
-
-    /*for(int i=0 ; i<WIDTH ; i++){
-        display_mem[i] = (((this->bg_col << 4) & 0xF0) | (this->fg_col & 0x0F)) << 8 | NULL;
-    }*/
-
-    for (int i = 0; i < WIDTH; i++) {
-        display_mem[i + WIDTH] = display_mem[i]; // add width to char to wrap around
-        display_mem[i] = text_col | NULL;
-    }
+    move_down();
+    carriage_return();
 }
 
 Display::Display(unsigned short bg_col, unsigned short fg_col){
@@ -39,21 +22,34 @@ Display::Display(unsigned short bg_col, unsigned short fg_col){
     display_mem = DISPLAY_MEM_START;
 
     text_col = (this->bg_col | this->fg_col) << 8; // Combine bg and fg, and shift left 8 times to allow char to fit after
-    // Number of characters cells to fill with colour = 80 * 25 = 2000
 
     for(int i=0 ; i<WIDTH*HEIGHT ; i++){ // Loop through all characters
         display_mem[i] = text_col | NULL;
     }
 }
 
-void Display::printc(const char c) {
-    if (cursor == HEIGHT || c == '\n') {
-        newline();
-        carriage_return();
+void Display::printc(char c) {
+    if (cursor == WIDTH) {
+        printc('\n');
     }
-    if (c != '\n') {
-        display_mem[cursor] = text_col | c;
-        cursor++;
+
+    switch(c){
+        case '\n':
+            newline();
+            break;
+
+        case '\v':
+            move_down();
+            break;
+
+        case '\r':
+            carriage_return();
+            break;
+
+        default:
+            display_mem[cursor] = text_col | c;
+            cursor++;
+            break;
     }
 }
 
