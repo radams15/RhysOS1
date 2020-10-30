@@ -2,11 +2,14 @@
 // Created by rhys on 30/10/2020.
 //
 
+#ifndef RHYSOS_DISPLAY_H
+#define RHYSOS_DISPLAY_H
+
 #include "Types.h"
 #include "Maths.cpp"
 
-#ifndef RHYSOS_DISPLAY_H
-#define RHYSOS_DISPLAY_H
+#include <stdarg.h>
+
 
 #define DISPLAY_MEM_START (unsigned short*) 0xB8000;
 

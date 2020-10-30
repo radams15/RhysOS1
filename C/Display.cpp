@@ -1,6 +1,5 @@
 #include "Display.h"
 
-#include <stdarg.h>
 
 void Display::carriage_return(){
     cursor = 0;

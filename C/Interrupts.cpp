@@ -3,7 +3,7 @@
 //
 
 #include "Interrupts.h"
-#include "IO.cpp"
+#include "Pic.cpp"
 
 void Interrupts::unknown_exception(int i, int code){
     Display::println("Unknown Exception!");
@@ -18,9 +18,7 @@ void Interrupts::register_handler(int i, handler h){
 }
 
 void Interrupts::interrupt_acknowledge(int i){
-    if(i < 32) {
-        /* do nothing */
-    } else {
+    if(i > 32) {
         Pic::acknowledge(i - 32);
     }
 }
@@ -77,57 +75,4 @@ void Interrupts::unblock(){
 void Interrupts::wait(){
     asm("sti");
     asm("hlt");
-}
-
-
-void Pic::init(uint8 pic0base, uint8 pic1base){
-    IO::outb(ICW1, control[0]);
-    IO::outb(pic0base, data[0]);
-    IO::outb(1 << 2, data[0]);
-    IO::outb(ICW4_MASTER, data[0]);
-    IO::outb(~(1 << 2), data[0]);
-
-    IO::outb(ICW1, control[1]);
-    IO::outb(pic1base, data[1]);
-    IO::outb(2, data[1]);
-    IO::outb(ICW4_SLAVE, data[1]);
-    IO::outb(~0, data[1]);
-}
-
-void Pic::enable(uint8 irq){
-    uint8 mask;
-    if(irq < 8) {
-        mask = IO::inb(data[0]);
-        mask = mask & ~(1 << irq);
-        IO::outb(mask, data[0]);
-    } else {
-        irq -= 8;
-        mask = IO::inb(data[1]);
-        mask = mask & ~(1 << irq);
-        IO::outb(mask, data[1]);
-        enable(2);
-    }
-}
-
-void Pic::disable(uint8 irq){
-    uint8 mask;
-    if(irq < 8) {
-        mask = IO::inb(data[0]);
-        mask = mask | (1 << irq);
-        IO::outb(mask, data[0]);
-    } else {
-        irq -= 8;
-        mask = IO::inb(data[1]);
-        mask = mask | (1 << irq);
-        IO::outb(mask, data[1]);
-    }
-}
-
-void Pic::acknowledge(uint8 irq){
-    if(irq >= 8) {
-        IO::outb(ACK_SPECIFIC + (irq - 8), control[1]);
-        IO::outb(ACK_SPECIFIC + (2), control[0]);
-    } else {
-        IO::outb(ACK_SPECIFIC + irq, control[0]);
-    }
 }

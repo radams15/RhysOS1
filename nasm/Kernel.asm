@@ -1,5 +1,8 @@
 BITS 32
 
+%define SCR_SIZ 2000    ; 80 x 25 Characters - VGA Text-mode Display size
+%define DISP_ADDR 0xB8000 ; the address of the display
+
 GLOBAL _Kernel_Start:function
 
 EXTERN main ; main c file
@@ -65,8 +68,8 @@ _Kernel_Start:
 	
 	; BEGIN - Set Screen Colour
 	mov dword EAX, 0x2F		; Colour: 0x2- = Green background, 0x-F = White foreground
-	mov dword EBX, 0xB8000 	; Display Memory address
-	mov dword ECX, 2000		; 80 x 25 Characters - VGA Text-mode Display size
+	mov dword EBX, DISP_ADDR 	; Display Memory address
+	mov dword ECX, SCR_SIZ
 	.ColourOutput:
 	mov byte [EBX], 0
 	mov byte [EBX+1], AL
@@ -82,8 +85,8 @@ _Kernel_Start:
 	
 	; BEGIN - Set Screen Colour
 	mov dword EAX, 0x3F		; Colour: 0x3- = Aqua background, 0x-F = White foreground
-	mov dword EBX, 0xB8000 	; Display Memory address
-	mov dword ECX, 2000		; 80 x 25 Characters - VGA Text-mode Display size
+	mov dword EBX, DISP_ADDR 	; Display Memory address
+	mov dword ECX, SCR_SIZ
 	.ColourOutput2:
 	mov byte [EBX], 0
 	mov byte [EBX+1], AL
@@ -97,8 +100,8 @@ _Kernel_Start:
 		
 	; BEGIN - Set Screen Colour
 	mov dword EAX, 0x4F		; Colour: 0x4- = Red background, 0x-F = White foreground
-	mov dword EBX, 0xB8000 	; Display Memory address
-	mov dword ECX, 2000		; 80 x 25 Characters - VGA Text-mode Display size
+	mov dword EBX, DISP_ADDR 	; Display Memory address
+	mov dword ECX, SCR_SIZ
 	.ColourOutput3:
 	mov byte [EBX], 0
 	mov byte [EBX+1], AL
@@ -124,8 +127,8 @@ Boot_FlushCsGDT:
 	
 	; BEGIN - Set Screen Colour
 	mov dword EAX, 0x5F		; Colour: 0x5- = Purple background, 0x-F = White foreground
-	mov dword EBX, 0xB8000 	; Display Memory address
-	mov dword ECX, 2000		; 80 x 25 Characters - VGA Text-mode Display size
+	mov dword EBX, DISP_ADDR 	; Display Memory address
+	mov dword ECX, SCR_SIZ
 	.ColourOutput4:
 	mov byte [EBX], 0
 	mov byte [EBX+1], AL
@@ -140,8 +143,8 @@ Boot_FlushCsGDT:
 HandleNoMultiboot:
 	; BEGIN - Set Screen Colour
 	mov dword EAX, 0x4F		; Colour: 0x4- = Red background, 0x-F = White foreground
-	mov dword EBX, 0xB8000 	; Display Memory address
-	mov dword ECX, 2000		; 80 x 25 Characters - VGA Text-mode Display size
+	mov dword EBX, DISP_ADDR 	; Display Memory address
+	mov dword ECX, SCR_SIZ
 	.ColourOutput:
 	mov byte [EBX], 0
 	mov byte [EBX+1], AL

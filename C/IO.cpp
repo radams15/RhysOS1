@@ -3,13 +3,13 @@
 //
 #include "IO.h"
 
-static inline void IO::outb(uint8 val, int port){
+static inline void IO::outb(int8 val, int32 port){
     asm volatile(
             "outb %0, %1" : : "a"(val), "Nd"(port)
     );
 }
 
-static inline uint8 IO::inb(int port){
+static inline uint8 IO::inb(int32 port){
     uint8 out;
 
     asm volatile(

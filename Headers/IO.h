@@ -6,8 +6,8 @@
 #define RHYSOS_IO_H
 
 namespace IO{
-    static inline void outb(uint8 val, int port);
-    static inline uint8 inb(int port);
+    static inline void outb(int8 val, int32 port);
+    static inline uint8 inb(int32 port);
 
     static inline void halt();
 }
