@@ -1,5 +1,7 @@
 #include "Display.h"
 
+#include <stdarg.h>
+
 void Display::carriage_return(){
     cursor = 0;
 }
@@ -70,7 +72,7 @@ void Display::printi(uint32 num){
         }
     }
 
-    power = Math::pow(10, size-1);
+    power = Maths::pow(10, size - 1);
 
     uint32 p, i;
 
@@ -93,13 +95,55 @@ void Display::printi(uint32 num){
     }
 }
 
-void Display::print(const char* text){
-    for (int i=0; text[i] != NULL; i++) {
-        printc(text[i]);
+void Display::print(const char* text, ...){
+
+    bool skip_next = false;
+
+    va_list args;
+
+    va_start(args, NULL);
+    for (int i=0; text[i] != NULL; i++){
+        if(skip_next){
+            skip_next = false;
+            continue;
+        }
+
+        if(text[i] == '%'){
+            char formatter = text[i+1];
+
+            switch(formatter){
+                case 'd':
+                    printi(va_arg(args, uint32));
+                    break;
+
+                case 'c':
+                    printc(va_arg(args, uint32));
+                    break;
+
+                case 's':
+                    print(va_arg(args, char*));
+                    break;
+
+                case '%':
+                    printc(formatter);
+                    break;
+
+                default:
+                    break;
+            }
+
+            skip_next = true;
+
+        }else{
+            printc(text[i]);
+        }
     }
+
+    va_end(args);
 }
 
 void Display::println(const char* text) {
     print(text);
+
     print("\n");
 }

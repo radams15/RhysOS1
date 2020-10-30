@@ -15,8 +15,6 @@ int main(){
     Interrupts::enable(33);
     Display::println("Keyboard Ready");*/
 
-    Display::println("Hi");
-
     /*Display::println("Execution Has Stopped");
     IO::halt();*/
 }

@@ -3,7 +3,7 @@
 //
 
 #include "Types.h"
-#include "Math.cpp"
+#include "Maths.cpp"
 
 #ifndef RHYSOS_DISPLAY_H
 #define RHYSOS_DISPLAY_H
@@ -33,7 +33,7 @@ namespace Display {
     void printc(char c);
     void printi(uint32 i);
 
-    void print(const char* text);
+    void print(const char* text, ...);
     void println(const char* text);
 
 };

@@ -7,7 +7,7 @@
 
 #include "Types.h"
 
-namespace Math{
+namespace Maths{
     uint32 pow(uint32 x, uint32 power);
 }
 
