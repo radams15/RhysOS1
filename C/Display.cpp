@@ -8,17 +8,37 @@ namespace Display{ // can't set variables in header file
     unsigned short text_col; // combined colour values
 
     unsigned short* display_mem;
-    unsigned int cursor = 0; // cursor location
+    uint16 row = 0; // horizontal
+    uint16 col = 0; // vertical
 
-    unsigned int total_size = WIDTH*HEIGHT;
+    uint32 total_size = WIDTH*HEIGHT;
 }
 
 void Display::carriage_return(){
-    cursor = 0;
+    row = 0;
+}
+
+void Display::shift_up(){
+    unsigned short* full_disp = DISPLAY_MEM_START;
+
+    for(uint32 i=0 ; i < WIDTH*HEIGHT ; i++){ // Loop through all characters
+        full_disp[ i - WIDTH ] = full_disp[i];
+        full_disp[i] = text_col | NULL;
+    }
+
+    //carriage_return();
+    col--;
 }
 
 void Display::move_down(){
-    display_mem = display_mem+WIDTH;
+    col++;
+    Serial::write("Row: %d, Col: %d\n", row, col);
+
+    if(col == HEIGHT){
+        shift_up();
+    }else{
+        display_mem = display_mem+WIDTH;
+    }
 }
 
 void Display::newline() {
@@ -26,24 +46,44 @@ void Display::newline() {
     carriage_return();
 }
 
-void Display::init(unsigned short bg_col_in, unsigned short fg_col_in){
+void Display::set_colour(unsigned short bg_col_in, unsigned short fg_col_in){
     //the low 4 bits represent the character color and the high 4 bits represent the background colour
     bg_col = bg_col_in << 4; // << 4 to make it the background colour
     fg_col = fg_col_in; // no shift to make foreground colour
 
+    text_col = (bg_col | fg_col) << 8; // Combine bg and fg, and shift left 8 times to allow char to fit after
+}
+
+void Display::refresh() {
+    unsigned short* old_mem_ptr = display_mem;
+
     display_mem = DISPLAY_MEM_START;
 
-    text_col = (bg_col | fg_col) << 8; // Combine bg and fg, and shift left 8 times to allow char to fit after
+    uint8 new_char;
+
+    for(uint32 i=0 ; i<total_size ; i++){ // Loop through all characters
+        if(display_mem[i] != NULL){
+            new_char = display_mem[i];
+        }else{
+            new_char = NULL;
+        }
+        display_mem[i] = text_col | new_char;
+    }
+
+    display_mem = old_mem_ptr;
+}
+
+void Display::init(unsigned short bg_col_in, unsigned short fg_col_in){
+    display_mem = DISPLAY_MEM_START;
+
+    set_colour(bg_col_in, fg_col_in);
+    refresh();
 
     Serial::write("Display Initialised!\n");
-
-    for(int i=0 ; i<WIDTH*HEIGHT ; i++){ // Loop through all characters
-        display_mem[i] = text_col | NULL;
-    }
 }
 
 void Display::printc(char c) {
-    if (cursor == WIDTH) {
+    if (row == WIDTH) {
         printc('\n');
     }
 
@@ -61,8 +101,8 @@ void Display::printc(char c) {
             break;
 
         default:
-            display_mem[cursor] = text_col | c;
-            cursor++;
+            display_mem[row] = text_col | c;
+            row++;
             break;
     }
 }
@@ -148,10 +188,4 @@ void Display::print(const char* text, ...){
     }
 
     va_end(args);
-}
-
-void Display::println(const char* text) {
-    print(text);
-
-    print("\n");
 }
