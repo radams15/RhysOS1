@@ -32,7 +32,6 @@ void Display::shift_up(){
 
 void Display::move_down(){
     col++;
-    Serial::write("Row: %d, Col: %d\n", row, col);
 
     if(col == HEIGHT){
         shift_up();

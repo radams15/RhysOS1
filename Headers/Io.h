@@ -8,8 +8,9 @@
 #include "Types.h"
 
 namespace Io{
-    void outb(int32 port, int8 val);
-    uint8 inb(int32 port);
+    void outb(uint16 port, int8 val);
+    uint8 inb(uint16 port);
+    uint16 inw(uint16 port);
 
     void halt();
 }
