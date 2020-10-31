@@ -305,6 +305,33 @@ C/Io.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Io.cpp.s
 .PHONY : C/Io.cpp.s
 
+C/Irq.o: C/Irq.cpp.o
+
+.PHONY : C/Irq.o
+
+# target to build an object file
+C/Irq.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Irq.cpp.o
+.PHONY : C/Irq.cpp.o
+
+C/Irq.i: C/Irq.cpp.i
+
+.PHONY : C/Irq.i
+
+# target to preprocess a source file
+C/Irq.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Irq.cpp.i
+.PHONY : C/Irq.cpp.i
+
+C/Irq.s: C/Irq.cpp.s
+
+.PHONY : C/Irq.s
+
+# target to generate assembly for a file
+C/Irq.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Irq.cpp.s
+.PHONY : C/Irq.cpp.s
+
 C/Maths.o: C/Maths.cpp.o
 
 .PHONY : C/Maths.o
@@ -467,6 +494,9 @@ help:
 	@echo "... C/Io.o"
 	@echo "... C/Io.i"
 	@echo "... C/Io.s"
+	@echo "... C/Irq.o"
+	@echo "... C/Irq.i"
+	@echo "... C/Irq.s"
 	@echo "... C/Maths.o"
 	@echo "... C/Maths.i"
 	@echo "... C/Maths.s"

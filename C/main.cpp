@@ -1,9 +1,11 @@
 #include "Display.h"
 #include "Serial.h"
+
 #include "Idt.h"
 #include "Gdt.h"
+#include "Irq.h"
 
-extern "C" void key_press(int interrupt, int code){
+void key_press(registers r){
     Display::print("KEY\n");
     Serial::write("KEY\n");
 }
@@ -18,6 +20,9 @@ int main(){
 
     Gdt::init_gdt();
     Idt::init_idt();
+
+    init_irq();
+    register_interrupt_handler(1, key_press);
 
     Serial::write("Keyboard Ready!\n");
 

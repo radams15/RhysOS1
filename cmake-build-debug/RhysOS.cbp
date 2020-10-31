@@ -102,6 +102,9 @@
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Io.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Irq.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Maths.cpp">
 			<Option target="RhysOS"/>
 		</Unit>

@@ -20,4 +20,4 @@ add_executable(
         C/isr.cpp
         C/Gdt.cpp
         C/Idt.cpp
-)
+        C/Irq.cpp)

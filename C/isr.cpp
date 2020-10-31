@@ -4,7 +4,6 @@
 
 #include <isr.h>
 
-extern "C" void isr_handler(registers_t regs){
+extern "C" void isr_handler(registers regs){
     Display::print("recieved interrupt: %d\n", regs.int_no);
-    Serial::write("Interrupt!\n");
 }
