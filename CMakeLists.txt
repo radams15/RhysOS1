@@ -8,13 +8,16 @@ include_directories(C)
 include_directories(Headers)
 
 add_executable(
-    RhysOS
-    C/Ascii.cpp
-    C/Display.cpp
-    C/Interrupts.cpp
-    C/Io.cpp
-    C/main.cpp
-    C/Maths.cpp
-    C/Pic.cpp
-    C/Serial.cpp
+        RhysOS
+        C/Ascii.cpp
+        C/Display.cpp
+        C/Interrupts.cpp
+        C/Io.cpp
+        C/main.cpp
+        C/Maths.cpp
+        C/Serial.cpp
+        C/Memory.cpp
+        C/isr.cpp
+        C/Gdt.cpp
+        C/Idt.cpp
 )

@@ -21,17 +21,6 @@ uint8 Io::inb(uint16 port){
     return out;
 }
 
-uint16 Io::inw(uint16 port){
-    uint8 out;
-
-    asm volatile("inw %1, %0"
-            : "=a" (out)
-            : "dN" (port)
-    );
-
-    return out;
-}
-
 void Io::halt(){
     asm("hlt");
 }

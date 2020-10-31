@@ -197,6 +197,60 @@ C/Display.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Display.cpp.s
 .PHONY : C/Display.cpp.s
 
+C/Gdt.o: C/Gdt.cpp.o
+
+.PHONY : C/Gdt.o
+
+# target to build an object file
+C/Gdt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Gdt.cpp.o
+.PHONY : C/Gdt.cpp.o
+
+C/Gdt.i: C/Gdt.cpp.i
+
+.PHONY : C/Gdt.i
+
+# target to preprocess a source file
+C/Gdt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Gdt.cpp.i
+.PHONY : C/Gdt.cpp.i
+
+C/Gdt.s: C/Gdt.cpp.s
+
+.PHONY : C/Gdt.s
+
+# target to generate assembly for a file
+C/Gdt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Gdt.cpp.s
+.PHONY : C/Gdt.cpp.s
+
+C/Idt.o: C/Idt.cpp.o
+
+.PHONY : C/Idt.o
+
+# target to build an object file
+C/Idt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Idt.cpp.o
+.PHONY : C/Idt.cpp.o
+
+C/Idt.i: C/Idt.cpp.i
+
+.PHONY : C/Idt.i
+
+# target to preprocess a source file
+C/Idt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Idt.cpp.i
+.PHONY : C/Idt.cpp.i
+
+C/Idt.s: C/Idt.cpp.s
+
+.PHONY : C/Idt.s
+
+# target to generate assembly for a file
+C/Idt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Idt.cpp.s
+.PHONY : C/Idt.cpp.s
+
 C/Interrupts.o: C/Interrupts.cpp.o
 
 .PHONY : C/Interrupts.o
@@ -278,32 +332,32 @@ C/Maths.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Maths.cpp.s
 .PHONY : C/Maths.cpp.s
 
-C/Pic.o: C/Pic.cpp.o
+C/Memory.o: C/Memory.cpp.o
 
-.PHONY : C/Pic.o
+.PHONY : C/Memory.o
 
 # target to build an object file
-C/Pic.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Pic.cpp.o
-.PHONY : C/Pic.cpp.o
+C/Memory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Memory.cpp.o
+.PHONY : C/Memory.cpp.o
 
-C/Pic.i: C/Pic.cpp.i
+C/Memory.i: C/Memory.cpp.i
 
-.PHONY : C/Pic.i
+.PHONY : C/Memory.i
 
 # target to preprocess a source file
-C/Pic.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Pic.cpp.i
-.PHONY : C/Pic.cpp.i
+C/Memory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Memory.cpp.i
+.PHONY : C/Memory.cpp.i
 
-C/Pic.s: C/Pic.cpp.s
+C/Memory.s: C/Memory.cpp.s
 
-.PHONY : C/Pic.s
+.PHONY : C/Memory.s
 
 # target to generate assembly for a file
-C/Pic.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Pic.cpp.s
-.PHONY : C/Pic.cpp.s
+C/Memory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Memory.cpp.s
+.PHONY : C/Memory.cpp.s
 
 C/Serial.o: C/Serial.cpp.o
 
@@ -331,6 +385,33 @@ C/Serial.s: C/Serial.cpp.s
 C/Serial.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Serial.cpp.s
 .PHONY : C/Serial.cpp.s
+
+C/isr.o: C/isr.cpp.o
+
+.PHONY : C/isr.o
+
+# target to build an object file
+C/isr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/isr.cpp.o
+.PHONY : C/isr.cpp.o
+
+C/isr.i: C/isr.cpp.i
+
+.PHONY : C/isr.i
+
+# target to preprocess a source file
+C/isr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/isr.cpp.i
+.PHONY : C/isr.cpp.i
+
+C/isr.s: C/isr.cpp.s
+
+.PHONY : C/isr.s
+
+# target to generate assembly for a file
+C/isr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/isr.cpp.s
+.PHONY : C/isr.cpp.s
 
 C/main.o: C/main.cpp.o
 
@@ -374,6 +455,12 @@ help:
 	@echo "... C/Display.o"
 	@echo "... C/Display.i"
 	@echo "... C/Display.s"
+	@echo "... C/Gdt.o"
+	@echo "... C/Gdt.i"
+	@echo "... C/Gdt.s"
+	@echo "... C/Idt.o"
+	@echo "... C/Idt.i"
+	@echo "... C/Idt.s"
 	@echo "... C/Interrupts.o"
 	@echo "... C/Interrupts.i"
 	@echo "... C/Interrupts.s"
@@ -383,12 +470,15 @@ help:
 	@echo "... C/Maths.o"
 	@echo "... C/Maths.i"
 	@echo "... C/Maths.s"
-	@echo "... C/Pic.o"
-	@echo "... C/Pic.i"
-	@echo "... C/Pic.s"
+	@echo "... C/Memory.o"
+	@echo "... C/Memory.i"
+	@echo "... C/Memory.s"
 	@echo "... C/Serial.o"
 	@echo "... C/Serial.i"
 	@echo "... C/Serial.s"
+	@echo "... C/isr.o"
+	@echo "... C/isr.i"
+	@echo "... C/isr.s"
 	@echo "... C/main.o"
 	@echo "... C/main.i"
 	@echo "... C/main.s"

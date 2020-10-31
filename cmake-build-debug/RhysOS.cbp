@@ -90,6 +90,12 @@
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Display.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Gdt.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Idt.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Interrupts.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
@@ -99,10 +105,13 @@
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Maths.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Pic.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Memory.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Serial.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/isr.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/main.cpp">
