@@ -31,7 +31,9 @@ int main(){
     Serial::write("\n\n###############Start User###############\n\n");
     Display::print("Boot Complete!\n");
 
-    Display::print("%d => %x\n", 12345, 12345);
+    Display::print("Waiting 2 secs...\n");
+    Clock::sleep(2);
+    Display::print("Done!\n");
 
     while(kernel_loop()){}
 

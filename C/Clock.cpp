@@ -6,6 +6,7 @@
 
 namespace Clock{
     uint32 tick;
+    uint32 frequency;
 }
 
 void Clock::callback(registers regs) {
@@ -14,6 +15,8 @@ void Clock::callback(registers regs) {
 
 void Clock::init(uint32 freq) {
     tick = 0;
+
+    Clock::frequency = freq;
 
     Irq::add_handler(Irq::IRQ0, callback);
 
@@ -43,4 +46,11 @@ uint8 Clock::read_cmos(uint8 reg) {
     Irq::enable(); // re-enable interrupts;
 
     return out;
+}
+
+void Clock::sleep(uint32 secs) {
+    uint32 dif = secs * frequency;
+    uint32 end = tick+dif;
+
+    while(tick < end);
 }

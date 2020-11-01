@@ -25,6 +25,8 @@ namespace Clock{
 
     void init(uint32 freq);
 
+    void sleep(uint32 secs);
+
     uint8 read_cmos(uint8 reg);
 
 }
