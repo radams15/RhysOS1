@@ -41,6 +41,7 @@ namespace Display {
     void carriage_return();
     void move_down();
     void newline();
+    void backspace();
 
     void set_colour(unsigned short bg_col_in, unsigned short fg_col_in);
 

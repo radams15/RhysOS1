@@ -18,6 +18,18 @@ void Display::carriage_return(){
     row = 0;
 }
 
+void Display::backspace(){
+    if(row == 0){
+        if(col > 0){
+            col--;
+        }
+        row = WIDTH;
+    }
+
+    row--;
+    display_mem[row] = text_col | NULL;
+}
+
 void Display::shift_up(){
     unsigned short* full_disp = DISPLAY_MEM_START;
 
@@ -26,7 +38,6 @@ void Display::shift_up(){
         full_disp[i] = text_col | NULL;
     }
 
-    //carriage_return();
     col--;
 }
 
@@ -97,6 +108,14 @@ void Display::printc(char c) {
 
         case '\r':
             carriage_return();
+            break;
+
+        case '\t':
+            print("    ");
+            break;
+
+        case '\b':
+            backspace();
             break;
 
         default:
