@@ -20,7 +20,7 @@ gen_iso:
 	grub2-mkrescue -o RhysOS.iso ISO
 
 run:
-	qemu-system-i386 -boot d -cdrom ${NAME}.iso -m 64 -serial file:kernel.log
+	qemu-system-i386 -boot d -cdrom ${NAME}.iso -m 64 -serial file:kernel_log.txt
 
 clean:
 	rm boot.o

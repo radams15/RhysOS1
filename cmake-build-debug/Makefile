@@ -170,6 +170,60 @@ C/Ascii.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Ascii.cpp.s
 .PHONY : C/Ascii.cpp.s
 
+C/Clock.o: C/Clock.cpp.o
+
+.PHONY : C/Clock.o
+
+# target to build an object file
+C/Clock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Clock.cpp.o
+.PHONY : C/Clock.cpp.o
+
+C/Clock.i: C/Clock.cpp.i
+
+.PHONY : C/Clock.i
+
+# target to preprocess a source file
+C/Clock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Clock.cpp.i
+.PHONY : C/Clock.cpp.i
+
+C/Clock.s: C/Clock.cpp.s
+
+.PHONY : C/Clock.s
+
+# target to generate assembly for a file
+C/Clock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Clock.cpp.s
+.PHONY : C/Clock.cpp.s
+
+C/Console.o: C/Console.cpp.o
+
+.PHONY : C/Console.o
+
+# target to build an object file
+C/Console.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Console.cpp.o
+.PHONY : C/Console.cpp.o
+
+C/Console.i: C/Console.cpp.i
+
+.PHONY : C/Console.i
+
+# target to preprocess a source file
+C/Console.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Console.cpp.i
+.PHONY : C/Console.cpp.i
+
+C/Console.s: C/Console.cpp.s
+
+.PHONY : C/Console.s
+
+# target to generate assembly for a file
+C/Console.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Console.cpp.s
+.PHONY : C/Console.cpp.s
+
 C/Display.o: C/Display.cpp.o
 
 .PHONY : C/Display.o
@@ -479,6 +533,12 @@ help:
 	@echo "... C/Ascii.o"
 	@echo "... C/Ascii.i"
 	@echo "... C/Ascii.s"
+	@echo "... C/Clock.o"
+	@echo "... C/Clock.i"
+	@echo "... C/Clock.s"
+	@echo "... C/Console.o"
+	@echo "... C/Console.i"
+	@echo "... C/Console.s"
 	@echo "... C/Display.o"
 	@echo "... C/Display.i"
 	@echo "... C/Display.s"

@@ -5,10 +5,9 @@
 #include "Gdt.h"
 #include "Irq.h"
 
-void key_press(registers r){
-    Display::print("KEY\n");
-    Serial::write("KEY\n");
-}
+#include "Clock.h"
+
+#include "Console.h"
 
 bool kernel_loop(){
     return true;
@@ -20,18 +19,15 @@ int main(){
 
     Gdt::init_gdt();
     Idt::init_idt();
+    Irq::init();
 
-    init_irq();
-    register_interrupt_handler(1, key_press);
+    Clock::init(50);
 
-    Serial::write("Keyboard Ready!\n");
+    Console::init();
 
-
+    Irq::enable();
     Serial::write("\n\n###############Start User###############\n\n");
     Display::print("Boot Complete!\n");
-
-    asm volatile ("int $0x3");
-    asm volatile ("int $0x4");
 
     while(kernel_loop()){}
 

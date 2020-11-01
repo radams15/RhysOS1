@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/rhys/scripts/Projects/RhysOS2/C/Ascii.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/Ascii.cpp.o"
+  "/home/rhys/scripts/Projects/RhysOS2/C/Clock.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/Clock.cpp.o"
+  "/home/rhys/scripts/Projects/RhysOS2/C/Console.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/Console.cpp.o"
   "/home/rhys/scripts/Projects/RhysOS2/C/Display.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/Display.cpp.o"
   "/home/rhys/scripts/Projects/RhysOS2/C/Gdt.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/Gdt.cpp.o"
   "/home/rhys/scripts/Projects/RhysOS2/C/Idt.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/Idt.cpp.o"

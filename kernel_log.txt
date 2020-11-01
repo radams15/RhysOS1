@@ -2,7 +2,10 @@ Serial Initialised!
 Display Initialised!
 Initialised IDTs
 IRQs Ready!
-Keyboard Ready!
+Added Handler For IRQ32
+Clock Initialised At 50Hz!
+Added Handler For IRQ33
+Enabled Interrupts
 
 
 ###############Start User###############

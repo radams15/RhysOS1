@@ -4,9 +4,19 @@
 
 #include <Irq.h>
 
-irq_callback interrupt_handlers[256];
+Irq::irq_callback interrupt_handlers[256];
 
-void init_irq(){
+void Irq::enable(){
+    Serial::write("Enabled Interrupts\n");
+    asm volatile("sti");
+}
+
+void Irq::disable(){
+    Serial::write("Disabled Interrupts\n");
+    asm volatile("cli");
+}
+
+void Irq::init(){
     Io::outb(0x20, 0x11);
     Io::outb(0xA0, 0x11);
     Io::outb(0x21, 0x20);
@@ -38,21 +48,20 @@ void init_irq(){
     Serial::write("IRQs Ready!\n");
 }
 
-extern "C" void handle_irq(registers regs){
+extern "C" void Irq::handle_irq(registers regs){
     if (regs.int_no >= 40){
-        // Send reset signal to slave.
-        Io::outb(0xA0, 0x20);
+        Io::outb(0xA0, 0x20); // Send reset signal to slave.
     }
     // Send reset signal to master. (As well as slave, if necessary).
     Io::outb(0x20, 0x20);
 
-    if (interrupt_handlers[regs.int_no] != 0)
-    {
+    if (interrupt_handlers[regs.int_no] != 0){
         irq_callback handler = interrupt_handlers[regs.int_no];
         handler(regs);
     }
 }
 
-void register_interrupt_handler(uint8 n, irq_callback handler){
+void Irq::add_handler(uint8 n, irq_callback handler){
+    Serial::write("Added Handler For IRQ%d\n", n);
     interrupt_handlers[n] = handler;
 }

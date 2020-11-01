@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RhysOS.dir/C/Ascii.cpp.o"
+  "CMakeFiles/RhysOS.dir/C/Clock.cpp.o"
+  "CMakeFiles/RhysOS.dir/C/Console.cpp.o"
   "CMakeFiles/RhysOS.dir/C/Display.cpp.o"
   "CMakeFiles/RhysOS.dir/C/Gdt.cpp.o"
   "CMakeFiles/RhysOS.dir/C/Idt.cpp.o"

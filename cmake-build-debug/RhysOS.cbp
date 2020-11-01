@@ -87,6 +87,12 @@
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Ascii.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Clock.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Console.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Display.cpp">
 			<Option target="RhysOS"/>
 		</Unit>

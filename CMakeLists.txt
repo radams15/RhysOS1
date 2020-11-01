@@ -20,4 +20,5 @@ add_executable(
         C/isr.cpp
         C/Gdt.cpp
         C/Idt.cpp
-        C/Irq.cpp)
+        C/Irq.cpp
+        C/Clock.cpp C/Console.cpp)
