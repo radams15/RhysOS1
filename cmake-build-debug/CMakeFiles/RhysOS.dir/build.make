@@ -246,18 +246,31 @@ CMakeFiles/RhysOS.dir/C/Clock.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Clock.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Clock.cpp -o CMakeFiles/RhysOS.dir/C/Clock.cpp.s
 
-CMakeFiles/RhysOS.dir/C/Console.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Console.cpp.o: ../C/Console.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RhysOS.dir/C/Console.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Console.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Console.cpp
+CMakeFiles/RhysOS.dir/C/Keyboard.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/C/Keyboard.cpp.o: ../C/Keyboard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RhysOS.dir/C/Keyboard.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Keyboard.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Keyboard.cpp
 
-CMakeFiles/RhysOS.dir/C/Console.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Console.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Console.cpp > CMakeFiles/RhysOS.dir/C/Console.cpp.i
+CMakeFiles/RhysOS.dir/C/Keyboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Keyboard.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Keyboard.cpp > CMakeFiles/RhysOS.dir/C/Keyboard.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Console.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Console.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Console.cpp -o CMakeFiles/RhysOS.dir/C/Console.cpp.s
+CMakeFiles/RhysOS.dir/C/Keyboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Keyboard.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Keyboard.cpp -o CMakeFiles/RhysOS.dir/C/Keyboard.cpp.s
+
+CMakeFiles/RhysOS.dir/C/Mouse.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/C/Mouse.cpp.o: ../C/Mouse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RhysOS.dir/C/Mouse.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Mouse.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Mouse.cpp
+
+CMakeFiles/RhysOS.dir/C/Mouse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Mouse.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Mouse.cpp > CMakeFiles/RhysOS.dir/C/Mouse.cpp.i
+
+CMakeFiles/RhysOS.dir/C/Mouse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Mouse.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Mouse.cpp -o CMakeFiles/RhysOS.dir/C/Mouse.cpp.s
 
 # Object files for target RhysOS
 RhysOS_OBJECTS = \
@@ -274,7 +287,8 @@ RhysOS_OBJECTS = \
 "CMakeFiles/RhysOS.dir/C/Idt.cpp.o" \
 "CMakeFiles/RhysOS.dir/C/Irq.cpp.o" \
 "CMakeFiles/RhysOS.dir/C/Clock.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/Console.cpp.o"
+"CMakeFiles/RhysOS.dir/C/Keyboard.cpp.o" \
+"CMakeFiles/RhysOS.dir/C/Mouse.cpp.o"
 
 # External object files for target RhysOS
 RhysOS_EXTERNAL_OBJECTS =
@@ -292,10 +306,11 @@ RhysOS: CMakeFiles/RhysOS.dir/C/Gdt.cpp.o
 RhysOS: CMakeFiles/RhysOS.dir/C/Idt.cpp.o
 RhysOS: CMakeFiles/RhysOS.dir/C/Irq.cpp.o
 RhysOS: CMakeFiles/RhysOS.dir/C/Clock.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/Console.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/C/Keyboard.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/C/Mouse.cpp.o
 RhysOS: CMakeFiles/RhysOS.dir/build.make
 RhysOS: CMakeFiles/RhysOS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable RhysOS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable RhysOS"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RhysOS.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -21,4 +21,4 @@ add_executable(
         C/Gdt.cpp
         C/Idt.cpp
         C/Irq.cpp
-        C/Clock.cpp C/Console.cpp)
+        C/Clock.cpp C/Keyboard.cpp C/Mouse.cpp)

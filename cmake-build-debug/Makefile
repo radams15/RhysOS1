@@ -197,33 +197,6 @@ C/Clock.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Clock.cpp.s
 .PHONY : C/Clock.cpp.s
 
-C/Console.o: C/Console.cpp.o
-
-.PHONY : C/Console.o
-
-# target to build an object file
-C/Console.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Console.cpp.o
-.PHONY : C/Console.cpp.o
-
-C/Console.i: C/Console.cpp.i
-
-.PHONY : C/Console.i
-
-# target to preprocess a source file
-C/Console.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Console.cpp.i
-.PHONY : C/Console.cpp.i
-
-C/Console.s: C/Console.cpp.s
-
-.PHONY : C/Console.s
-
-# target to generate assembly for a file
-C/Console.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Console.cpp.s
-.PHONY : C/Console.cpp.s
-
 C/Display.o: C/Display.cpp.o
 
 .PHONY : C/Display.o
@@ -386,6 +359,33 @@ C/Irq.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Irq.cpp.s
 .PHONY : C/Irq.cpp.s
 
+C/Keyboard.o: C/Keyboard.cpp.o
+
+.PHONY : C/Keyboard.o
+
+# target to build an object file
+C/Keyboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Keyboard.cpp.o
+.PHONY : C/Keyboard.cpp.o
+
+C/Keyboard.i: C/Keyboard.cpp.i
+
+.PHONY : C/Keyboard.i
+
+# target to preprocess a source file
+C/Keyboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Keyboard.cpp.i
+.PHONY : C/Keyboard.cpp.i
+
+C/Keyboard.s: C/Keyboard.cpp.s
+
+.PHONY : C/Keyboard.s
+
+# target to generate assembly for a file
+C/Keyboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Keyboard.cpp.s
+.PHONY : C/Keyboard.cpp.s
+
 C/Maths.o: C/Maths.cpp.o
 
 .PHONY : C/Maths.o
@@ -439,6 +439,33 @@ C/Memory.s: C/Memory.cpp.s
 C/Memory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Memory.cpp.s
 .PHONY : C/Memory.cpp.s
+
+C/Mouse.o: C/Mouse.cpp.o
+
+.PHONY : C/Mouse.o
+
+# target to build an object file
+C/Mouse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Mouse.cpp.o
+.PHONY : C/Mouse.cpp.o
+
+C/Mouse.i: C/Mouse.cpp.i
+
+.PHONY : C/Mouse.i
+
+# target to preprocess a source file
+C/Mouse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Mouse.cpp.i
+.PHONY : C/Mouse.cpp.i
+
+C/Mouse.s: C/Mouse.cpp.s
+
+.PHONY : C/Mouse.s
+
+# target to generate assembly for a file
+C/Mouse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Mouse.cpp.s
+.PHONY : C/Mouse.cpp.s
 
 C/Serial.o: C/Serial.cpp.o
 
@@ -536,9 +563,6 @@ help:
 	@echo "... C/Clock.o"
 	@echo "... C/Clock.i"
 	@echo "... C/Clock.s"
-	@echo "... C/Console.o"
-	@echo "... C/Console.i"
-	@echo "... C/Console.s"
 	@echo "... C/Display.o"
 	@echo "... C/Display.i"
 	@echo "... C/Display.s"
@@ -557,12 +581,18 @@ help:
 	@echo "... C/Irq.o"
 	@echo "... C/Irq.i"
 	@echo "... C/Irq.s"
+	@echo "... C/Keyboard.o"
+	@echo "... C/Keyboard.i"
+	@echo "... C/Keyboard.s"
 	@echo "... C/Maths.o"
 	@echo "... C/Maths.i"
 	@echo "... C/Maths.s"
 	@echo "... C/Memory.o"
 	@echo "... C/Memory.i"
 	@echo "... C/Memory.s"
+	@echo "... C/Mouse.o"
+	@echo "... C/Mouse.i"
+	@echo "... C/Mouse.s"
 	@echo "... C/Serial.o"
 	@echo "... C/Serial.i"
 	@echo "... C/Serial.s"

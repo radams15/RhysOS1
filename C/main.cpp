@@ -7,7 +7,8 @@
 
 #include "Clock.h"
 
-#include "Console.h"
+#include "Keyboard.h"
+#include "Mouse.h"
 
 bool kernel_loop(){
     return true;
@@ -23,7 +24,8 @@ int main(){
 
     Clock::init(50);
 
-    Console::init();
+    Keyboard::init();
+    Mouse::init();
 
     Irq::enable();
     Serial::write("\n\n###############Start User###############\n\n");
