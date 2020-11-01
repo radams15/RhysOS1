@@ -197,6 +197,168 @@ C/Clock.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Clock.cpp.s
 .PHONY : C/Clock.cpp.s
 
+C/Cpu/Gdt.o: C/Cpu/Gdt.cpp.o
+
+.PHONY : C/Cpu/Gdt.o
+
+# target to build an object file
+C/Cpu/Gdt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.o
+.PHONY : C/Cpu/Gdt.cpp.o
+
+C/Cpu/Gdt.i: C/Cpu/Gdt.cpp.i
+
+.PHONY : C/Cpu/Gdt.i
+
+# target to preprocess a source file
+C/Cpu/Gdt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.i
+.PHONY : C/Cpu/Gdt.cpp.i
+
+C/Cpu/Gdt.s: C/Cpu/Gdt.cpp.s
+
+.PHONY : C/Cpu/Gdt.s
+
+# target to generate assembly for a file
+C/Cpu/Gdt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.s
+.PHONY : C/Cpu/Gdt.cpp.s
+
+C/Cpu/Idt.o: C/Cpu/Idt.cpp.o
+
+.PHONY : C/Cpu/Idt.o
+
+# target to build an object file
+C/Cpu/Idt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.o
+.PHONY : C/Cpu/Idt.cpp.o
+
+C/Cpu/Idt.i: C/Cpu/Idt.cpp.i
+
+.PHONY : C/Cpu/Idt.i
+
+# target to preprocess a source file
+C/Cpu/Idt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.i
+.PHONY : C/Cpu/Idt.cpp.i
+
+C/Cpu/Idt.s: C/Cpu/Idt.cpp.s
+
+.PHONY : C/Cpu/Idt.s
+
+# target to generate assembly for a file
+C/Cpu/Idt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.s
+.PHONY : C/Cpu/Idt.cpp.s
+
+C/Cpu/Interrupts.o: C/Cpu/Interrupts.cpp.o
+
+.PHONY : C/Cpu/Interrupts.o
+
+# target to build an object file
+C/Cpu/Interrupts.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.o
+.PHONY : C/Cpu/Interrupts.cpp.o
+
+C/Cpu/Interrupts.i: C/Cpu/Interrupts.cpp.i
+
+.PHONY : C/Cpu/Interrupts.i
+
+# target to preprocess a source file
+C/Cpu/Interrupts.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.i
+.PHONY : C/Cpu/Interrupts.cpp.i
+
+C/Cpu/Interrupts.s: C/Cpu/Interrupts.cpp.s
+
+.PHONY : C/Cpu/Interrupts.s
+
+# target to generate assembly for a file
+C/Cpu/Interrupts.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.s
+.PHONY : C/Cpu/Interrupts.cpp.s
+
+C/Cpu/Io.o: C/Cpu/Io.cpp.o
+
+.PHONY : C/Cpu/Io.o
+
+# target to build an object file
+C/Cpu/Io.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.o
+.PHONY : C/Cpu/Io.cpp.o
+
+C/Cpu/Io.i: C/Cpu/Io.cpp.i
+
+.PHONY : C/Cpu/Io.i
+
+# target to preprocess a source file
+C/Cpu/Io.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.i
+.PHONY : C/Cpu/Io.cpp.i
+
+C/Cpu/Io.s: C/Cpu/Io.cpp.s
+
+.PHONY : C/Cpu/Io.s
+
+# target to generate assembly for a file
+C/Cpu/Io.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.s
+.PHONY : C/Cpu/Io.cpp.s
+
+C/Cpu/Irq.o: C/Cpu/Irq.cpp.o
+
+.PHONY : C/Cpu/Irq.o
+
+# target to build an object file
+C/Cpu/Irq.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.o
+.PHONY : C/Cpu/Irq.cpp.o
+
+C/Cpu/Irq.i: C/Cpu/Irq.cpp.i
+
+.PHONY : C/Cpu/Irq.i
+
+# target to preprocess a source file
+C/Cpu/Irq.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.i
+.PHONY : C/Cpu/Irq.cpp.i
+
+C/Cpu/Irq.s: C/Cpu/Irq.cpp.s
+
+.PHONY : C/Cpu/Irq.s
+
+# target to generate assembly for a file
+C/Cpu/Irq.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.s
+.PHONY : C/Cpu/Irq.cpp.s
+
+C/Cpu/isr.o: C/Cpu/isr.cpp.o
+
+.PHONY : C/Cpu/isr.o
+
+# target to build an object file
+C/Cpu/isr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.o
+.PHONY : C/Cpu/isr.cpp.o
+
+C/Cpu/isr.i: C/Cpu/isr.cpp.i
+
+.PHONY : C/Cpu/isr.i
+
+# target to preprocess a source file
+C/Cpu/isr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.i
+.PHONY : C/Cpu/isr.cpp.i
+
+C/Cpu/isr.s: C/Cpu/isr.cpp.s
+
+.PHONY : C/Cpu/isr.s
+
+# target to generate assembly for a file
+C/Cpu/isr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.s
+.PHONY : C/Cpu/isr.cpp.s
+
 C/Display.o: C/Display.cpp.o
 
 .PHONY : C/Display.o
@@ -223,141 +385,6 @@ C/Display.s: C/Display.cpp.s
 C/Display.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Display.cpp.s
 .PHONY : C/Display.cpp.s
-
-C/Gdt.o: C/Gdt.cpp.o
-
-.PHONY : C/Gdt.o
-
-# target to build an object file
-C/Gdt.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Gdt.cpp.o
-.PHONY : C/Gdt.cpp.o
-
-C/Gdt.i: C/Gdt.cpp.i
-
-.PHONY : C/Gdt.i
-
-# target to preprocess a source file
-C/Gdt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Gdt.cpp.i
-.PHONY : C/Gdt.cpp.i
-
-C/Gdt.s: C/Gdt.cpp.s
-
-.PHONY : C/Gdt.s
-
-# target to generate assembly for a file
-C/Gdt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Gdt.cpp.s
-.PHONY : C/Gdt.cpp.s
-
-C/Idt.o: C/Idt.cpp.o
-
-.PHONY : C/Idt.o
-
-# target to build an object file
-C/Idt.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Idt.cpp.o
-.PHONY : C/Idt.cpp.o
-
-C/Idt.i: C/Idt.cpp.i
-
-.PHONY : C/Idt.i
-
-# target to preprocess a source file
-C/Idt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Idt.cpp.i
-.PHONY : C/Idt.cpp.i
-
-C/Idt.s: C/Idt.cpp.s
-
-.PHONY : C/Idt.s
-
-# target to generate assembly for a file
-C/Idt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Idt.cpp.s
-.PHONY : C/Idt.cpp.s
-
-C/Interrupts.o: C/Interrupts.cpp.o
-
-.PHONY : C/Interrupts.o
-
-# target to build an object file
-C/Interrupts.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Interrupts.cpp.o
-.PHONY : C/Interrupts.cpp.o
-
-C/Interrupts.i: C/Interrupts.cpp.i
-
-.PHONY : C/Interrupts.i
-
-# target to preprocess a source file
-C/Interrupts.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Interrupts.cpp.i
-.PHONY : C/Interrupts.cpp.i
-
-C/Interrupts.s: C/Interrupts.cpp.s
-
-.PHONY : C/Interrupts.s
-
-# target to generate assembly for a file
-C/Interrupts.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Interrupts.cpp.s
-.PHONY : C/Interrupts.cpp.s
-
-C/Io.o: C/Io.cpp.o
-
-.PHONY : C/Io.o
-
-# target to build an object file
-C/Io.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Io.cpp.o
-.PHONY : C/Io.cpp.o
-
-C/Io.i: C/Io.cpp.i
-
-.PHONY : C/Io.i
-
-# target to preprocess a source file
-C/Io.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Io.cpp.i
-.PHONY : C/Io.cpp.i
-
-C/Io.s: C/Io.cpp.s
-
-.PHONY : C/Io.s
-
-# target to generate assembly for a file
-C/Io.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Io.cpp.s
-.PHONY : C/Io.cpp.s
-
-C/Irq.o: C/Irq.cpp.o
-
-.PHONY : C/Irq.o
-
-# target to build an object file
-C/Irq.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Irq.cpp.o
-.PHONY : C/Irq.cpp.o
-
-C/Irq.i: C/Irq.cpp.i
-
-.PHONY : C/Irq.i
-
-# target to preprocess a source file
-C/Irq.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Irq.cpp.i
-.PHONY : C/Irq.cpp.i
-
-C/Irq.s: C/Irq.cpp.s
-
-.PHONY : C/Irq.s
-
-# target to generate assembly for a file
-C/Irq.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Irq.cpp.s
-.PHONY : C/Irq.cpp.s
 
 C/Keyboard.o: C/Keyboard.cpp.o
 
@@ -494,33 +521,6 @@ C/Serial.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Serial.cpp.s
 .PHONY : C/Serial.cpp.s
 
-C/isr.o: C/isr.cpp.o
-
-.PHONY : C/isr.o
-
-# target to build an object file
-C/isr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/isr.cpp.o
-.PHONY : C/isr.cpp.o
-
-C/isr.i: C/isr.cpp.i
-
-.PHONY : C/isr.i
-
-# target to preprocess a source file
-C/isr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/isr.cpp.i
-.PHONY : C/isr.cpp.i
-
-C/isr.s: C/isr.cpp.s
-
-.PHONY : C/isr.s
-
-# target to generate assembly for a file
-C/isr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/isr.cpp.s
-.PHONY : C/isr.cpp.s
-
 C/main.o: C/main.cpp.o
 
 .PHONY : C/main.o
@@ -563,24 +563,27 @@ help:
 	@echo "... C/Clock.o"
 	@echo "... C/Clock.i"
 	@echo "... C/Clock.s"
+	@echo "... C/Cpu/Gdt.o"
+	@echo "... C/Cpu/Gdt.i"
+	@echo "... C/Cpu/Gdt.s"
+	@echo "... C/Cpu/Idt.o"
+	@echo "... C/Cpu/Idt.i"
+	@echo "... C/Cpu/Idt.s"
+	@echo "... C/Cpu/Interrupts.o"
+	@echo "... C/Cpu/Interrupts.i"
+	@echo "... C/Cpu/Interrupts.s"
+	@echo "... C/Cpu/Io.o"
+	@echo "... C/Cpu/Io.i"
+	@echo "... C/Cpu/Io.s"
+	@echo "... C/Cpu/Irq.o"
+	@echo "... C/Cpu/Irq.i"
+	@echo "... C/Cpu/Irq.s"
+	@echo "... C/Cpu/isr.o"
+	@echo "... C/Cpu/isr.i"
+	@echo "... C/Cpu/isr.s"
 	@echo "... C/Display.o"
 	@echo "... C/Display.i"
 	@echo "... C/Display.s"
-	@echo "... C/Gdt.o"
-	@echo "... C/Gdt.i"
-	@echo "... C/Gdt.s"
-	@echo "... C/Idt.o"
-	@echo "... C/Idt.i"
-	@echo "... C/Idt.s"
-	@echo "... C/Interrupts.o"
-	@echo "... C/Interrupts.i"
-	@echo "... C/Interrupts.s"
-	@echo "... C/Io.o"
-	@echo "... C/Io.i"
-	@echo "... C/Io.s"
-	@echo "... C/Irq.o"
-	@echo "... C/Irq.i"
-	@echo "... C/Irq.s"
 	@echo "... C/Keyboard.o"
 	@echo "... C/Keyboard.i"
 	@echo "... C/Keyboard.s"
@@ -596,9 +599,6 @@ help:
 	@echo "... C/Serial.o"
 	@echo "... C/Serial.i"
 	@echo "... C/Serial.s"
-	@echo "... C/isr.o"
-	@echo "... C/isr.i"
-	@echo "... C/isr.s"
 	@echo "... C/main.o"
 	@echo "... C/main.i"
 	@echo "... C/main.s"

@@ -90,22 +90,25 @@
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Clock.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Cpu/Gdt.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Cpu/Idt.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Cpu/Interrupts.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Cpu/Io.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Cpu/Irq.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Cpu/isr.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Display.cpp">
-			<Option target="RhysOS"/>
-		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Gdt.cpp">
-			<Option target="RhysOS"/>
-		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Idt.cpp">
-			<Option target="RhysOS"/>
-		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Interrupts.cpp">
-			<Option target="RhysOS"/>
-		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Io.cpp">
-			<Option target="RhysOS"/>
-		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Irq.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Keyboard.cpp">
@@ -121,9 +124,6 @@
 			<Option target="RhysOS"/>
 		</Unit>
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Serial.cpp">
-			<Option target="RhysOS"/>
-		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/isr.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/main.cpp">

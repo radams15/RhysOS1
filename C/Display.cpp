@@ -1,5 +1,5 @@
 #include <Serial.h>
-#include "Display.h"
+#include <Display.h>
 
 namespace Display{ // can't set variables in header file
     unsigned short bg_col;
@@ -126,17 +126,8 @@ void Display::printc(char c) {
 }
 
 void Display::printi(uint32 num){
-    uint32 num_temp = num;
-    uint32 size = 0;
     uint32 power;
-
-    while(true) {
-        num_temp = num_temp / 10;
-        size++;
-        if (num_temp == 0) {
-            break;
-        }
-    }
+    uint32 size = Maths::num_size(num);
 
     power = Maths::pow(10, size - 1);
 
@@ -174,24 +165,30 @@ void Display::print(const char* text, ...){
             continue;
         }
 
-        if(text[i] == '%'){
+        if(text[i] == FORMAT_MARK){
             char formatter = text[i+1];
 
             switch(formatter){
-                case 'd':
+                case 'd': // int
                     printi(va_arg(args, uint32));
                     break;
 
-                case 'c':
+                case 'c': // char
                     printc(va_arg(args, uint32));
                     break;
 
-                case 's':
+                case 's': // string
                     print(va_arg(args, char*));
                     break;
 
-                case '%':
-                    printc(formatter);
+                case 'x': // hex int
+                    char buf[32];
+                    Maths::hex(va_arg(args, uint32), buf);
+                    print(buf);
+                    break;
+
+                case FORMAT_MARK:
+                    printc(FORMAT_MARK);
                     break;
 
                 default:

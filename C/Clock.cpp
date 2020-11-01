@@ -32,3 +32,15 @@ void Clock::init(uint32 freq) {
 
     Serial::write("Clock Initialised At %dHz!\n", freq);
 }
+
+uint8 Clock::read_cmos(uint8 reg) {
+    Irq::disable(); // disable interrupts
+
+    Io::outb(0x70, reg);
+
+    uint8 out = Io::inb(0x71);
+
+    Irq::enable(); // re-enable interrupts;
+
+    return out;
+}

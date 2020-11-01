@@ -11,14 +11,16 @@ add_executable(
         RhysOS
         C/Ascii.cpp
         C/Display.cpp
-        C/Interrupts.cpp
-        C/Io.cpp
+        C/Cpu/Interrupts.cpp
+        C/Cpu/Io.cpp
         C/main.cpp
         C/Maths.cpp
         C/Serial.cpp
         C/Memory.cpp
-        C/isr.cpp
-        C/Gdt.cpp
-        C/Idt.cpp
-        C/Irq.cpp
-        C/Clock.cpp C/Keyboard.cpp C/Mouse.cpp)
+        C/Cpu/isr.cpp
+        C/Cpu/Gdt.cpp
+        C/Cpu/Idt.cpp
+        C/Cpu/Irq.cpp
+        C/Clock.cpp
+        C/Keyboard.cpp
+        C/Mouse.cpp)

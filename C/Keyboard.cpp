@@ -16,11 +16,12 @@ void Keyboard::callback(registers r) {
     uint32 key = translate(code);
 
     if(key != NULL) {
-        //Display::print("%c", key);
+        Display::print("%c", key);
         last_key = key;
     }
 
     Io::outb(0x20, 0x20);
+
 }
 
 void Keyboard::init() {

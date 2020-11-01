@@ -1,9 +1,9 @@
-#include "Display.h"
-#include "Serial.h"
+#include <Display.h>
+#include <Serial.h>
 
-#include "Idt.h"
-#include "Gdt.h"
-#include "Irq.h"
+#include <Idt.h>
+#include <Gdt.h>
+#include <Irq.h>
 
 #include "Clock.h"
 
@@ -30,6 +30,8 @@ int main(){
     Irq::enable();
     Serial::write("\n\n###############Start User###############\n\n");
     Display::print("Boot Complete!\n");
+
+    Display::print("%d => %x\n", 12345, 12345);
 
     while(kernel_loop()){}
 

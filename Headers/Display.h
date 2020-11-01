@@ -11,6 +11,7 @@
 
 #include <stdarg.h>
 
+#define FORMAT_MARK '%'
 
 #define DISPLAY_MEM_START (unsigned short*) 0xB8000
 
