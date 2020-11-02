@@ -8,7 +8,7 @@
 
 #include "Types.h"
 #include "Io.h"
-#include "Ascii.h"
+#include "String.h"
 #include "Maths.h"
 
 namespace Serial{

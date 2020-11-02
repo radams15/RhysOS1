@@ -28,12 +28,9 @@ int main(){
     Mouse::init();
 
     Irq::enable();
+
     Serial::write("\n\n###############Start User###############\n\n");
     Display::print("Boot Complete!\n");
-
-    Display::print("Waiting 2 secs...\n");
-    Clock::sleep(2);
-    Display::print("Done!\n");
 
     while(kernel_loop()){}
 

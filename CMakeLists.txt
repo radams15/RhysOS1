@@ -9,7 +9,7 @@ include_directories(Headers)
 
 add_executable(
         RhysOS
-        C/Ascii.cpp
+        C/String.cpp
         C/Display.cpp
         C/Cpu/Interrupts.cpp
         C/Cpu/Io.cpp

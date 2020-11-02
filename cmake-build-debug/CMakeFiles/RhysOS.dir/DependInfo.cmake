@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/rhys/scripts/Projects/RhysOS2/C/Ascii.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/Ascii.cpp.o"
   "/home/rhys/scripts/Projects/RhysOS2/C/Clock.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/Clock.cpp.o"
   "/home/rhys/scripts/Projects/RhysOS2/C/Cpu/Gdt.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.o"
   "/home/rhys/scripts/Projects/RhysOS2/C/Cpu/Idt.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.o"
@@ -18,6 +17,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/rhys/scripts/Projects/RhysOS2/C/Memory.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/Memory.cpp.o"
   "/home/rhys/scripts/Projects/RhysOS2/C/Mouse.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/Mouse.cpp.o"
   "/home/rhys/scripts/Projects/RhysOS2/C/Serial.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/Serial.cpp.o"
+  "/home/rhys/scripts/Projects/RhysOS2/C/String.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/String.cpp.o"
   "/home/rhys/scripts/Projects/RhysOS2/C/main.cpp" "/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles/RhysOS.dir/C/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

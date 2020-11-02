@@ -48,9 +48,9 @@ void Serial::writei(uint32 num){
 
         if(power > 10) {
             i = p / (power / 10);
-            writec(Ascii::chr(i));
+            writec(String::chr(i));
         }else {
-            writec(Ascii::chr(p));
+            writec(String::chr(p));
             break;
         }
 

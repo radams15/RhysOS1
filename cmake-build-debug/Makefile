@@ -143,33 +143,6 @@ RhysOS/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/build
 .PHONY : RhysOS/fast
 
-C/Ascii.o: C/Ascii.cpp.o
-
-.PHONY : C/Ascii.o
-
-# target to build an object file
-C/Ascii.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Ascii.cpp.o
-.PHONY : C/Ascii.cpp.o
-
-C/Ascii.i: C/Ascii.cpp.i
-
-.PHONY : C/Ascii.i
-
-# target to preprocess a source file
-C/Ascii.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Ascii.cpp.i
-.PHONY : C/Ascii.cpp.i
-
-C/Ascii.s: C/Ascii.cpp.s
-
-.PHONY : C/Ascii.s
-
-# target to generate assembly for a file
-C/Ascii.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Ascii.cpp.s
-.PHONY : C/Ascii.cpp.s
-
 C/Clock.o: C/Clock.cpp.o
 
 .PHONY : C/Clock.o
@@ -521,6 +494,33 @@ C/Serial.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Serial.cpp.s
 .PHONY : C/Serial.cpp.s
 
+C/String.o: C/String.cpp.o
+
+.PHONY : C/String.o
+
+# target to build an object file
+C/String.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/String.cpp.o
+.PHONY : C/String.cpp.o
+
+C/String.i: C/String.cpp.i
+
+.PHONY : C/String.i
+
+# target to preprocess a source file
+C/String.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/String.cpp.i
+.PHONY : C/String.cpp.i
+
+C/String.s: C/String.cpp.s
+
+.PHONY : C/String.s
+
+# target to generate assembly for a file
+C/String.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/String.cpp.s
+.PHONY : C/String.cpp.s
+
 C/main.o: C/main.cpp.o
 
 .PHONY : C/main.o
@@ -557,9 +557,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... RhysOS"
-	@echo "... C/Ascii.o"
-	@echo "... C/Ascii.i"
-	@echo "... C/Ascii.s"
 	@echo "... C/Clock.o"
 	@echo "... C/Clock.i"
 	@echo "... C/Clock.s"
@@ -599,6 +596,9 @@ help:
 	@echo "... C/Serial.o"
 	@echo "... C/Serial.i"
 	@echo "... C/Serial.s"
+	@echo "... C/String.o"
+	@echo "... C/String.i"
+	@echo "... C/String.s"
 	@echo "... C/main.o"
 	@echo "... C/main.i"
 	@echo "... C/main.s"

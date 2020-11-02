@@ -84,9 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Ascii.cpp">
-			<Option target="RhysOS"/>
-		</Unit>
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Clock.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
@@ -124,6 +121,9 @@
 			<Option target="RhysOS"/>
 		</Unit>
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Serial.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/String.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/main.cpp">

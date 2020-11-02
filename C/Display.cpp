@@ -93,7 +93,7 @@ void Display::init(unsigned short bg_col_in, unsigned short fg_col_in){
 }
 
 void Display::printc(char c) {
-    if (row == WIDTH) {
+    if (row >= WIDTH-1) {
         printc('\n');
     }
 
@@ -138,9 +138,9 @@ void Display::printi(uint32 num){
 
         if(power > 10) {
             i = p / (power / 10);
-            Display::printc(Ascii::chr(i));
+            Display::printc(String::chr(i));
         }else {
-            Display::printc(Ascii::chr(p));
+            Display::printc(String::chr(p));
             break;
         }
 

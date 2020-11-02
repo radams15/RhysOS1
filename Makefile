@@ -1,6 +1,6 @@
 export PATH := Tools/bin:$(PATH)
 
-CXX=g++ -g -W
+CXX=g++ -g -m32
 ASM=nasm -f elf
 NAME=RhysOS
 
@@ -13,7 +13,7 @@ compile:
 	${ASM} -o gdt.o nasm/gdt.s
 	${ASM} -o interrupts.o nasm/interrupts.s
 
-	${CXX} boot.o gdt.o interrupts.o C/*.cpp C/Cpu/*.cpp -o ${NAME}.bin -T linker.ld -fno-stack-protector -fpermissive -nostdlib -m32 -std=c++11 -ffreestanding -IHeaders -IC -Wl,--build-id=none
+	${CXX} boot.o gdt.o interrupts.o C/*.cpp C/Cpu/*.cpp -o ${NAME}.bin -T linker.ld -fno-stack-protector -fpermissive -nostdlib -std=c++11 -ffreestanding -IHeaders -IC -Wl,--build-id=none
 
 gen_iso:
 	mv ${NAME}.bin ISO/boot/${NAME}.bin

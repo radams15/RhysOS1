@@ -18,6 +18,13 @@ namespace Keyboard{
     void callback(registers r);
 
     void init();
+
+    enum buffer_vals{
+        KEY = 0,
+        CONTROL = 1,
+        ALT = 2,
+        SHIFT = 3
+    };
 }
 
 #endif //RHYSOS_KEYBOARD_H

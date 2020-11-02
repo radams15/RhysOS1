@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/RhysOS.dir/C/Ascii.cpp.o"
   "CMakeFiles/RhysOS.dir/C/Clock.cpp.o"
   "CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.o"
   "CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.o"
@@ -13,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RhysOS.dir/C/Memory.cpp.o"
   "CMakeFiles/RhysOS.dir/C/Mouse.cpp.o"
   "CMakeFiles/RhysOS.dir/C/Serial.cpp.o"
+  "CMakeFiles/RhysOS.dir/C/String.cpp.o"
   "CMakeFiles/RhysOS.dir/C/main.cpp.o"
   "RhysOS"
   "RhysOS.pdb"

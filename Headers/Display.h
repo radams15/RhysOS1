@@ -7,7 +7,7 @@
 
 #include "Types.h"
 #include "Maths.h"
-#include "Ascii.h"
+#include "String.h"
 
 #include <stdarg.h>
 

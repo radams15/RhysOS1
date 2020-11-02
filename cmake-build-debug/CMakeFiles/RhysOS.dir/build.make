@@ -77,18 +77,18 @@ include CMakeFiles/RhysOS.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/RhysOS.dir/flags.make
 
-CMakeFiles/RhysOS.dir/C/Ascii.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Ascii.cpp.o: ../C/Ascii.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RhysOS.dir/C/Ascii.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Ascii.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Ascii.cpp
+CMakeFiles/RhysOS.dir/C/String.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/C/String.cpp.o: ../C/String.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RhysOS.dir/C/String.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/String.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/String.cpp
 
-CMakeFiles/RhysOS.dir/C/Ascii.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Ascii.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Ascii.cpp > CMakeFiles/RhysOS.dir/C/Ascii.cpp.i
+CMakeFiles/RhysOS.dir/C/String.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/String.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/String.cpp > CMakeFiles/RhysOS.dir/C/String.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Ascii.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Ascii.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Ascii.cpp -o CMakeFiles/RhysOS.dir/C/Ascii.cpp.s
+CMakeFiles/RhysOS.dir/C/String.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/String.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/String.cpp -o CMakeFiles/RhysOS.dir/C/String.cpp.s
 
 CMakeFiles/RhysOS.dir/C/Display.cpp.o: CMakeFiles/RhysOS.dir/flags.make
 CMakeFiles/RhysOS.dir/C/Display.cpp.o: ../C/Display.cpp
@@ -274,7 +274,7 @@ CMakeFiles/RhysOS.dir/C/Mouse.cpp.s: cmake_force
 
 # Object files for target RhysOS
 RhysOS_OBJECTS = \
-"CMakeFiles/RhysOS.dir/C/Ascii.cpp.o" \
+"CMakeFiles/RhysOS.dir/C/String.cpp.o" \
 "CMakeFiles/RhysOS.dir/C/Display.cpp.o" \
 "CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.o" \
 "CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.o" \
@@ -293,7 +293,7 @@ RhysOS_OBJECTS = \
 # External object files for target RhysOS
 RhysOS_EXTERNAL_OBJECTS =
 
-RhysOS: CMakeFiles/RhysOS.dir/C/Ascii.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/C/String.cpp.o
 RhysOS: CMakeFiles/RhysOS.dir/C/Display.cpp.o
 RhysOS: CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.o
 RhysOS: CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.o
