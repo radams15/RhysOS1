@@ -138,9 +138,9 @@ void Display::printi(uint32 num){
 
         if(power > 10) {
             i = p / (power / 10);
-            Display::printc(String::chr(i));
+            Display::printc(Str::chr(i));
         }else {
-            Display::printc(String::chr(p));
+            Display::printc(Str::chr(p));
             break;
         }
 
@@ -153,12 +153,18 @@ void Display::printi(uint32 num){
 }
 
 void Display::print(const char* text, ...){
-
-    bool skip_next = false;
-
     va_list args;
 
     va_start(args, NULL);
+
+    Display::print(text, args);
+
+    va_end(args);
+}
+
+void Display::print(const char* text, va_list args){
+    bool skip_next = false;
+
     for (int i=0; text[i] != NULL; i++){
         if(skip_next){
             skip_next = false;
@@ -201,6 +207,4 @@ void Display::print(const char* text, ...){
             printc(text[i]);
         }
     }
-
-    va_end(args);
 }

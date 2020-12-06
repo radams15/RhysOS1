@@ -5,7 +5,6 @@ IRQs Ready!
 Added Handler For IRQ32
 Clock Initialised At 50Hz!
 Added Handler For IRQ33
-Added Handler For IRQ44
 Enabled Interrupts
 
 

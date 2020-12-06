@@ -15,9 +15,15 @@ namespace Keyboard{
 
     uint32 translate(uint32 code);
 
-    void callback(registers r);
+    void main_callback(registers r);
+
+    typedef void (*callback)(char buffer[4]);
 
     void init();
+
+    enum{
+        QUEUE_LEN = 32
+    };
 
     enum buffer_vals{
         KEY = 0,
@@ -25,6 +31,10 @@ namespace Keyboard{
         ALT = 2,
         SHIFT = 3
     };
+
+    void set_callback(callback c);
+
+    void default_callback(char buffer[4]);
 }
 
 #endif //RHYSOS_KEYBOARD_H

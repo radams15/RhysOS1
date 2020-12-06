@@ -8,11 +8,12 @@
 
 namespace Keyboard{
     char buffer[4]; // key, control, alt, shift
+    callback call;
 }
 
 void Keyboard::init() {
-
-    Irq::add_handler(Irq::IRQ1, callback);
+    Irq::add_handler(Irq::IRQ1, main_callback);
+    call = default_callback;
 }
 
 uint32 Keyboard::translate(uint32 code_in) {
@@ -30,7 +31,7 @@ uint32 Keyboard::translate(uint32 code_in) {
     return NULL;
 }
 
-void Keyboard::callback(registers r) {
+void Keyboard::main_callback(registers r) {
     uint32 code = Io::inb(0x60);
 
     if(code == NULL) return;
@@ -63,26 +64,35 @@ void Keyboard::callback(registers r) {
         case 0xB6:
             buffer[SHIFT] = 0;
             break;
+    }
 
 
+    char chr;
+    char to_check;
+    for(int i=0; keymap[i][0] != 0 ; i++){
+        to_check = keymap[i][0];
+        chr = keymap[i][1];
 
-        default:
-            buffer[KEY] = code;
+        if(code == to_check){
+            buffer[KEY] = chr;
             break;
-    }
-
-    char key = translate(buffer[KEY]);
-    if(key != NULL) {
-
-        if(buffer[SHIFT]){
-            if(buffer[KEY]){
-                String::lower(&key);
-            }
         }
-
-        Display::printc(key);
     }
+
+    call(buffer);
 
     Io::outb(0x20, 0x20);
 
+}
+
+void Keyboard::default_callback(char *buffer) {
+    if(buffer[KEY] != NULL) {
+        if(buffer[SHIFT]){
+            if(buffer[KEY]){
+                buffer[KEY] -= 32;
+            }
+        }
+
+        Display::printc(buffer[KEY]);
+    }
 }

@@ -44,8 +44,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/rhys/scripts/Projects/RhysOS2/C"/>
+					<Add directory="/home/rhys/scripts/Projects/RhysOS2/CPP"/>
 					<Add directory="/home/rhys/scripts/Projects/RhysOS2/Headers"/>
+					<Add directory="/home/rhys/scripts/Projects/RhysOS2/C_Interop"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
@@ -67,8 +68,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/rhys/scripts/Projects/RhysOS2/C"/>
+					<Add directory="/home/rhys/scripts/Projects/RhysOS2/CPP"/>
 					<Add directory="/home/rhys/scripts/Projects/RhysOS2/Headers"/>
+					<Add directory="/home/rhys/scripts/Projects/RhysOS2/C_Interop"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/x86_64-redhat-linux"/>
 					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/10/../../../../include/c++/10/backward"/>
@@ -84,49 +86,58 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Clock.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Clock.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Cpu/Gdt.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Gdt.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Cpu/Idt.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Idt.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Cpu/Interrupts.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Interrupts.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Cpu/Io.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Io.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Cpu/Irq.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Irq.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Cpu/isr.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/isr.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Display.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Display.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Keyboard.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Keyboard.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Maths.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Maths.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Memory.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Memory.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Mouse.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Mouse.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/Serial.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Queue.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/String.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Serial.cpp">
 			<Option target="RhysOS"/>
 		</Unit>
-		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C/main.cpp">
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/Str.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CPP/main.cpp">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C_Interop/stdio.c">
+			<Option target="RhysOS"/>
+		</Unit>
+		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/C_Interop/stdio.h">
 			<Option target="RhysOS"/>
 		</Unit>
 		<Unit filename="/home/rhys/scripts/Projects/RhysOS2/CMakeLists.txt">

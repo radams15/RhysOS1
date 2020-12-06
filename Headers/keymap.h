@@ -7,7 +7,7 @@
 
 #include <Types.h>
 
-uint32 keymap[][2] = {
+int32 keymap[][2] = {
         {0x10, 'q'},
         {0x14, 't'},
         {0x18, 'o'},
@@ -37,10 +37,10 @@ uint32 keymap[][2] = {
 
         {0x1C, '\n'},
         {0x0F, '\t'},
-        {0x39, ' '},
         {0x0E, '\b'},
+        {0x39, ' '},
 
         {NULL, NULL}
-};
+}; // MUST end with a double NULL
 
 #endif //RHYSOS_KEYMAP_H

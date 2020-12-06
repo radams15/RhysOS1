@@ -1,21 +1,20 @@
 //
-// Created by rhys on 30/10/2020.
+// Created by rhys on 24/11/2020.
 //
 
 #ifndef RHYSOS_STRING_H
 #define RHYSOS_STRING_H
 
-#include "Types.h"
+#include "Str.h"
+#include "Memory.h"
 
-namespace String{
-    char chr(uint32 code);
+class String{
+private:
+    const char* value;
 
-    void cpy(char* dest, const char* src);
-    void cat(char *dest, const char *src);
-
-    void lower(char* in);
-
-    uint32 len(const char* subj);
-}
+public:
+    String();
+    String(const char* value);
+};
 
 #endif //RHYSOS_STRING_H

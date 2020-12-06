@@ -13,7 +13,7 @@ compile:
 	${ASM} -o gdt.o nasm/gdt.s
 	${ASM} -o interrupts.o nasm/interrupts.s
 
-	${CXX} boot.o gdt.o interrupts.o C/*.cpp C/Cpu/*.cpp -o ${NAME}.bin -T linker.ld -fno-stack-protector -fpermissive -nostdlib -std=c++11 -ffreestanding -IHeaders -IC -Wl,--build-id=none
+	${CXX} boot.o gdt.o interrupts.o CPP/*.cpp CPP/Cpu/*.cpp C_Interop/*.c -o ${NAME}.bin -T linker.ld -fno-stack-protector -fpermissive -nostdlib -std=c++11 -ffreestanding -IHeaders -IC_Interop -IC -Wl,--build-id=none
 
 gen_iso:
 	mv ${NAME}.bin ISO/boot/${NAME}.bin

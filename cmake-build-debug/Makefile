@@ -143,410 +143,464 @@ RhysOS/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/build
 .PHONY : RhysOS/fast
 
-C/Clock.o: C/Clock.cpp.o
+CPP/Clock.o: CPP/Clock.cpp.o
 
-.PHONY : C/Clock.o
-
-# target to build an object file
-C/Clock.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Clock.cpp.o
-.PHONY : C/Clock.cpp.o
-
-C/Clock.i: C/Clock.cpp.i
-
-.PHONY : C/Clock.i
-
-# target to preprocess a source file
-C/Clock.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Clock.cpp.i
-.PHONY : C/Clock.cpp.i
-
-C/Clock.s: C/Clock.cpp.s
-
-.PHONY : C/Clock.s
-
-# target to generate assembly for a file
-C/Clock.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Clock.cpp.s
-.PHONY : C/Clock.cpp.s
-
-C/Cpu/Gdt.o: C/Cpu/Gdt.cpp.o
-
-.PHONY : C/Cpu/Gdt.o
+.PHONY : CPP/Clock.o
 
 # target to build an object file
-C/Cpu/Gdt.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.o
-.PHONY : C/Cpu/Gdt.cpp.o
+CPP/Clock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Clock.cpp.o
+.PHONY : CPP/Clock.cpp.o
 
-C/Cpu/Gdt.i: C/Cpu/Gdt.cpp.i
+CPP/Clock.i: CPP/Clock.cpp.i
 
-.PHONY : C/Cpu/Gdt.i
+.PHONY : CPP/Clock.i
 
 # target to preprocess a source file
-C/Cpu/Gdt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.i
-.PHONY : C/Cpu/Gdt.cpp.i
+CPP/Clock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Clock.cpp.i
+.PHONY : CPP/Clock.cpp.i
 
-C/Cpu/Gdt.s: C/Cpu/Gdt.cpp.s
+CPP/Clock.s: CPP/Clock.cpp.s
 
-.PHONY : C/Cpu/Gdt.s
+.PHONY : CPP/Clock.s
 
 # target to generate assembly for a file
-C/Cpu/Gdt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.s
-.PHONY : C/Cpu/Gdt.cpp.s
+CPP/Clock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Clock.cpp.s
+.PHONY : CPP/Clock.cpp.s
 
-C/Cpu/Idt.o: C/Cpu/Idt.cpp.o
+CPP/Cpu/Gdt.o: CPP/Cpu/Gdt.cpp.o
 
-.PHONY : C/Cpu/Idt.o
+.PHONY : CPP/Cpu/Gdt.o
 
 # target to build an object file
-C/Cpu/Idt.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.o
-.PHONY : C/Cpu/Idt.cpp.o
+CPP/Cpu/Gdt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.o
+.PHONY : CPP/Cpu/Gdt.cpp.o
 
-C/Cpu/Idt.i: C/Cpu/Idt.cpp.i
+CPP/Cpu/Gdt.i: CPP/Cpu/Gdt.cpp.i
 
-.PHONY : C/Cpu/Idt.i
+.PHONY : CPP/Cpu/Gdt.i
 
 # target to preprocess a source file
-C/Cpu/Idt.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.i
-.PHONY : C/Cpu/Idt.cpp.i
+CPP/Cpu/Gdt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.i
+.PHONY : CPP/Cpu/Gdt.cpp.i
 
-C/Cpu/Idt.s: C/Cpu/Idt.cpp.s
+CPP/Cpu/Gdt.s: CPP/Cpu/Gdt.cpp.s
 
-.PHONY : C/Cpu/Idt.s
+.PHONY : CPP/Cpu/Gdt.s
 
 # target to generate assembly for a file
-C/Cpu/Idt.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.s
-.PHONY : C/Cpu/Idt.cpp.s
+CPP/Cpu/Gdt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.s
+.PHONY : CPP/Cpu/Gdt.cpp.s
 
-C/Cpu/Interrupts.o: C/Cpu/Interrupts.cpp.o
+CPP/Cpu/Idt.o: CPP/Cpu/Idt.cpp.o
 
-.PHONY : C/Cpu/Interrupts.o
+.PHONY : CPP/Cpu/Idt.o
 
 # target to build an object file
-C/Cpu/Interrupts.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.o
-.PHONY : C/Cpu/Interrupts.cpp.o
+CPP/Cpu/Idt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.o
+.PHONY : CPP/Cpu/Idt.cpp.o
 
-C/Cpu/Interrupts.i: C/Cpu/Interrupts.cpp.i
+CPP/Cpu/Idt.i: CPP/Cpu/Idt.cpp.i
 
-.PHONY : C/Cpu/Interrupts.i
+.PHONY : CPP/Cpu/Idt.i
 
 # target to preprocess a source file
-C/Cpu/Interrupts.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.i
-.PHONY : C/Cpu/Interrupts.cpp.i
+CPP/Cpu/Idt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.i
+.PHONY : CPP/Cpu/Idt.cpp.i
 
-C/Cpu/Interrupts.s: C/Cpu/Interrupts.cpp.s
+CPP/Cpu/Idt.s: CPP/Cpu/Idt.cpp.s
 
-.PHONY : C/Cpu/Interrupts.s
+.PHONY : CPP/Cpu/Idt.s
 
 # target to generate assembly for a file
-C/Cpu/Interrupts.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.s
-.PHONY : C/Cpu/Interrupts.cpp.s
+CPP/Cpu/Idt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.s
+.PHONY : CPP/Cpu/Idt.cpp.s
 
-C/Cpu/Io.o: C/Cpu/Io.cpp.o
+CPP/Cpu/Interrupts.o: CPP/Cpu/Interrupts.cpp.o
 
-.PHONY : C/Cpu/Io.o
+.PHONY : CPP/Cpu/Interrupts.o
 
 # target to build an object file
-C/Cpu/Io.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.o
-.PHONY : C/Cpu/Io.cpp.o
+CPP/Cpu/Interrupts.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.o
+.PHONY : CPP/Cpu/Interrupts.cpp.o
 
-C/Cpu/Io.i: C/Cpu/Io.cpp.i
+CPP/Cpu/Interrupts.i: CPP/Cpu/Interrupts.cpp.i
 
-.PHONY : C/Cpu/Io.i
+.PHONY : CPP/Cpu/Interrupts.i
 
 # target to preprocess a source file
-C/Cpu/Io.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.i
-.PHONY : C/Cpu/Io.cpp.i
+CPP/Cpu/Interrupts.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.i
+.PHONY : CPP/Cpu/Interrupts.cpp.i
 
-C/Cpu/Io.s: C/Cpu/Io.cpp.s
+CPP/Cpu/Interrupts.s: CPP/Cpu/Interrupts.cpp.s
 
-.PHONY : C/Cpu/Io.s
+.PHONY : CPP/Cpu/Interrupts.s
 
 # target to generate assembly for a file
-C/Cpu/Io.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.s
-.PHONY : C/Cpu/Io.cpp.s
+CPP/Cpu/Interrupts.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.s
+.PHONY : CPP/Cpu/Interrupts.cpp.s
 
-C/Cpu/Irq.o: C/Cpu/Irq.cpp.o
+CPP/Cpu/Io.o: CPP/Cpu/Io.cpp.o
 
-.PHONY : C/Cpu/Irq.o
+.PHONY : CPP/Cpu/Io.o
 
 # target to build an object file
-C/Cpu/Irq.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.o
-.PHONY : C/Cpu/Irq.cpp.o
+CPP/Cpu/Io.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.o
+.PHONY : CPP/Cpu/Io.cpp.o
 
-C/Cpu/Irq.i: C/Cpu/Irq.cpp.i
+CPP/Cpu/Io.i: CPP/Cpu/Io.cpp.i
 
-.PHONY : C/Cpu/Irq.i
+.PHONY : CPP/Cpu/Io.i
 
 # target to preprocess a source file
-C/Cpu/Irq.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.i
-.PHONY : C/Cpu/Irq.cpp.i
+CPP/Cpu/Io.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.i
+.PHONY : CPP/Cpu/Io.cpp.i
 
-C/Cpu/Irq.s: C/Cpu/Irq.cpp.s
+CPP/Cpu/Io.s: CPP/Cpu/Io.cpp.s
 
-.PHONY : C/Cpu/Irq.s
+.PHONY : CPP/Cpu/Io.s
 
 # target to generate assembly for a file
-C/Cpu/Irq.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.s
-.PHONY : C/Cpu/Irq.cpp.s
+CPP/Cpu/Io.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.s
+.PHONY : CPP/Cpu/Io.cpp.s
 
-C/Cpu/isr.o: C/Cpu/isr.cpp.o
+CPP/Cpu/Irq.o: CPP/Cpu/Irq.cpp.o
 
-.PHONY : C/Cpu/isr.o
+.PHONY : CPP/Cpu/Irq.o
 
 # target to build an object file
-C/Cpu/isr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.o
-.PHONY : C/Cpu/isr.cpp.o
+CPP/Cpu/Irq.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.o
+.PHONY : CPP/Cpu/Irq.cpp.o
 
-C/Cpu/isr.i: C/Cpu/isr.cpp.i
+CPP/Cpu/Irq.i: CPP/Cpu/Irq.cpp.i
 
-.PHONY : C/Cpu/isr.i
+.PHONY : CPP/Cpu/Irq.i
 
 # target to preprocess a source file
-C/Cpu/isr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.i
-.PHONY : C/Cpu/isr.cpp.i
+CPP/Cpu/Irq.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.i
+.PHONY : CPP/Cpu/Irq.cpp.i
 
-C/Cpu/isr.s: C/Cpu/isr.cpp.s
+CPP/Cpu/Irq.s: CPP/Cpu/Irq.cpp.s
 
-.PHONY : C/Cpu/isr.s
+.PHONY : CPP/Cpu/Irq.s
 
 # target to generate assembly for a file
-C/Cpu/isr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.s
-.PHONY : C/Cpu/isr.cpp.s
+CPP/Cpu/Irq.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.s
+.PHONY : CPP/Cpu/Irq.cpp.s
 
-C/Display.o: C/Display.cpp.o
+CPP/Cpu/isr.o: CPP/Cpu/isr.cpp.o
 
-.PHONY : C/Display.o
+.PHONY : CPP/Cpu/isr.o
 
 # target to build an object file
-C/Display.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Display.cpp.o
-.PHONY : C/Display.cpp.o
+CPP/Cpu/isr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.o
+.PHONY : CPP/Cpu/isr.cpp.o
 
-C/Display.i: C/Display.cpp.i
+CPP/Cpu/isr.i: CPP/Cpu/isr.cpp.i
 
-.PHONY : C/Display.i
+.PHONY : CPP/Cpu/isr.i
 
 # target to preprocess a source file
-C/Display.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Display.cpp.i
-.PHONY : C/Display.cpp.i
+CPP/Cpu/isr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.i
+.PHONY : CPP/Cpu/isr.cpp.i
 
-C/Display.s: C/Display.cpp.s
+CPP/Cpu/isr.s: CPP/Cpu/isr.cpp.s
 
-.PHONY : C/Display.s
+.PHONY : CPP/Cpu/isr.s
 
 # target to generate assembly for a file
-C/Display.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Display.cpp.s
-.PHONY : C/Display.cpp.s
+CPP/Cpu/isr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.s
+.PHONY : CPP/Cpu/isr.cpp.s
 
-C/Keyboard.o: C/Keyboard.cpp.o
+CPP/Display.o: CPP/Display.cpp.o
 
-.PHONY : C/Keyboard.o
+.PHONY : CPP/Display.o
 
 # target to build an object file
-C/Keyboard.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Keyboard.cpp.o
-.PHONY : C/Keyboard.cpp.o
+CPP/Display.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Display.cpp.o
+.PHONY : CPP/Display.cpp.o
 
-C/Keyboard.i: C/Keyboard.cpp.i
+CPP/Display.i: CPP/Display.cpp.i
 
-.PHONY : C/Keyboard.i
+.PHONY : CPP/Display.i
 
 # target to preprocess a source file
-C/Keyboard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Keyboard.cpp.i
-.PHONY : C/Keyboard.cpp.i
+CPP/Display.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Display.cpp.i
+.PHONY : CPP/Display.cpp.i
 
-C/Keyboard.s: C/Keyboard.cpp.s
+CPP/Display.s: CPP/Display.cpp.s
 
-.PHONY : C/Keyboard.s
+.PHONY : CPP/Display.s
 
 # target to generate assembly for a file
-C/Keyboard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Keyboard.cpp.s
-.PHONY : C/Keyboard.cpp.s
+CPP/Display.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Display.cpp.s
+.PHONY : CPP/Display.cpp.s
 
-C/Maths.o: C/Maths.cpp.o
+CPP/Keyboard.o: CPP/Keyboard.cpp.o
 
-.PHONY : C/Maths.o
+.PHONY : CPP/Keyboard.o
 
 # target to build an object file
-C/Maths.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Maths.cpp.o
-.PHONY : C/Maths.cpp.o
+CPP/Keyboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.o
+.PHONY : CPP/Keyboard.cpp.o
 
-C/Maths.i: C/Maths.cpp.i
+CPP/Keyboard.i: CPP/Keyboard.cpp.i
 
-.PHONY : C/Maths.i
+.PHONY : CPP/Keyboard.i
 
 # target to preprocess a source file
-C/Maths.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Maths.cpp.i
-.PHONY : C/Maths.cpp.i
+CPP/Keyboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.i
+.PHONY : CPP/Keyboard.cpp.i
 
-C/Maths.s: C/Maths.cpp.s
+CPP/Keyboard.s: CPP/Keyboard.cpp.s
 
-.PHONY : C/Maths.s
+.PHONY : CPP/Keyboard.s
 
 # target to generate assembly for a file
-C/Maths.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Maths.cpp.s
-.PHONY : C/Maths.cpp.s
+CPP/Keyboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.s
+.PHONY : CPP/Keyboard.cpp.s
 
-C/Memory.o: C/Memory.cpp.o
+CPP/Maths.o: CPP/Maths.cpp.o
 
-.PHONY : C/Memory.o
+.PHONY : CPP/Maths.o
 
 # target to build an object file
-C/Memory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Memory.cpp.o
-.PHONY : C/Memory.cpp.o
+CPP/Maths.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Maths.cpp.o
+.PHONY : CPP/Maths.cpp.o
 
-C/Memory.i: C/Memory.cpp.i
+CPP/Maths.i: CPP/Maths.cpp.i
 
-.PHONY : C/Memory.i
+.PHONY : CPP/Maths.i
 
 # target to preprocess a source file
-C/Memory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Memory.cpp.i
-.PHONY : C/Memory.cpp.i
+CPP/Maths.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Maths.cpp.i
+.PHONY : CPP/Maths.cpp.i
 
-C/Memory.s: C/Memory.cpp.s
+CPP/Maths.s: CPP/Maths.cpp.s
 
-.PHONY : C/Memory.s
+.PHONY : CPP/Maths.s
 
 # target to generate assembly for a file
-C/Memory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Memory.cpp.s
-.PHONY : C/Memory.cpp.s
+CPP/Maths.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Maths.cpp.s
+.PHONY : CPP/Maths.cpp.s
 
-C/Mouse.o: C/Mouse.cpp.o
+CPP/Memory.o: CPP/Memory.cpp.o
 
-.PHONY : C/Mouse.o
+.PHONY : CPP/Memory.o
 
 # target to build an object file
-C/Mouse.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Mouse.cpp.o
-.PHONY : C/Mouse.cpp.o
+CPP/Memory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Memory.cpp.o
+.PHONY : CPP/Memory.cpp.o
 
-C/Mouse.i: C/Mouse.cpp.i
+CPP/Memory.i: CPP/Memory.cpp.i
 
-.PHONY : C/Mouse.i
+.PHONY : CPP/Memory.i
 
 # target to preprocess a source file
-C/Mouse.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Mouse.cpp.i
-.PHONY : C/Mouse.cpp.i
+CPP/Memory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Memory.cpp.i
+.PHONY : CPP/Memory.cpp.i
 
-C/Mouse.s: C/Mouse.cpp.s
+CPP/Memory.s: CPP/Memory.cpp.s
 
-.PHONY : C/Mouse.s
+.PHONY : CPP/Memory.s
 
 # target to generate assembly for a file
-C/Mouse.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Mouse.cpp.s
-.PHONY : C/Mouse.cpp.s
+CPP/Memory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Memory.cpp.s
+.PHONY : CPP/Memory.cpp.s
 
-C/Serial.o: C/Serial.cpp.o
+CPP/Mouse.o: CPP/Mouse.cpp.o
 
-.PHONY : C/Serial.o
+.PHONY : CPP/Mouse.o
 
 # target to build an object file
-C/Serial.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Serial.cpp.o
-.PHONY : C/Serial.cpp.o
+CPP/Mouse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.o
+.PHONY : CPP/Mouse.cpp.o
 
-C/Serial.i: C/Serial.cpp.i
+CPP/Mouse.i: CPP/Mouse.cpp.i
 
-.PHONY : C/Serial.i
+.PHONY : CPP/Mouse.i
 
 # target to preprocess a source file
-C/Serial.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Serial.cpp.i
-.PHONY : C/Serial.cpp.i
+CPP/Mouse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.i
+.PHONY : CPP/Mouse.cpp.i
 
-C/Serial.s: C/Serial.cpp.s
+CPP/Mouse.s: CPP/Mouse.cpp.s
 
-.PHONY : C/Serial.s
+.PHONY : CPP/Mouse.s
 
 # target to generate assembly for a file
-C/Serial.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/Serial.cpp.s
-.PHONY : C/Serial.cpp.s
+CPP/Mouse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.s
+.PHONY : CPP/Mouse.cpp.s
 
-C/String.o: C/String.cpp.o
+CPP/Queue.o: CPP/Queue.cpp.o
 
-.PHONY : C/String.o
+.PHONY : CPP/Queue.o
 
 # target to build an object file
-C/String.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/String.cpp.o
-.PHONY : C/String.cpp.o
+CPP/Queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Queue.cpp.o
+.PHONY : CPP/Queue.cpp.o
 
-C/String.i: C/String.cpp.i
+CPP/Queue.i: CPP/Queue.cpp.i
 
-.PHONY : C/String.i
+.PHONY : CPP/Queue.i
 
 # target to preprocess a source file
-C/String.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/String.cpp.i
-.PHONY : C/String.cpp.i
+CPP/Queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Queue.cpp.i
+.PHONY : CPP/Queue.cpp.i
 
-C/String.s: C/String.cpp.s
+CPP/Queue.s: CPP/Queue.cpp.s
 
-.PHONY : C/String.s
+.PHONY : CPP/Queue.s
 
 # target to generate assembly for a file
-C/String.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/String.cpp.s
-.PHONY : C/String.cpp.s
+CPP/Queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Queue.cpp.s
+.PHONY : CPP/Queue.cpp.s
 
-C/main.o: C/main.cpp.o
+CPP/Serial.o: CPP/Serial.cpp.o
 
-.PHONY : C/main.o
+.PHONY : CPP/Serial.o
 
 # target to build an object file
-C/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/main.cpp.o
-.PHONY : C/main.cpp.o
+CPP/Serial.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Serial.cpp.o
+.PHONY : CPP/Serial.cpp.o
 
-C/main.i: C/main.cpp.i
+CPP/Serial.i: CPP/Serial.cpp.i
 
-.PHONY : C/main.i
+.PHONY : CPP/Serial.i
 
 # target to preprocess a source file
-C/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/main.cpp.i
-.PHONY : C/main.cpp.i
+CPP/Serial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Serial.cpp.i
+.PHONY : CPP/Serial.cpp.i
 
-C/main.s: C/main.cpp.s
+CPP/Serial.s: CPP/Serial.cpp.s
 
-.PHONY : C/main.s
+.PHONY : CPP/Serial.s
 
 # target to generate assembly for a file
-C/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C/main.cpp.s
-.PHONY : C/main.cpp.s
+CPP/Serial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Serial.cpp.s
+.PHONY : CPP/Serial.cpp.s
+
+CPP/Str.o: CPP/Str.cpp.o
+
+.PHONY : CPP/Str.o
+
+# target to build an object file
+CPP/Str.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Str.cpp.o
+.PHONY : CPP/Str.cpp.o
+
+CPP/Str.i: CPP/Str.cpp.i
+
+.PHONY : CPP/Str.i
+
+# target to preprocess a source file
+CPP/Str.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Str.cpp.i
+.PHONY : CPP/Str.cpp.i
+
+CPP/Str.s: CPP/Str.cpp.s
+
+.PHONY : CPP/Str.s
+
+# target to generate assembly for a file
+CPP/Str.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/Str.cpp.s
+.PHONY : CPP/Str.cpp.s
+
+CPP/main.o: CPP/main.cpp.o
+
+.PHONY : CPP/main.o
+
+# target to build an object file
+CPP/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/main.cpp.o
+.PHONY : CPP/main.cpp.o
+
+CPP/main.i: CPP/main.cpp.i
+
+.PHONY : CPP/main.i
+
+# target to preprocess a source file
+CPP/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/main.cpp.i
+.PHONY : CPP/main.cpp.i
+
+CPP/main.s: CPP/main.cpp.s
+
+.PHONY : CPP/main.s
+
+# target to generate assembly for a file
+CPP/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/CPP/main.cpp.s
+.PHONY : CPP/main.cpp.s
+
+C_Interop/stdio.o: C_Interop/stdio.c.o
+
+.PHONY : C_Interop/stdio.o
+
+# target to build an object file
+C_Interop/stdio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C_Interop/stdio.c.o
+.PHONY : C_Interop/stdio.c.o
+
+C_Interop/stdio.i: C_Interop/stdio.c.i
+
+.PHONY : C_Interop/stdio.i
+
+# target to preprocess a source file
+C_Interop/stdio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C_Interop/stdio.c.i
+.PHONY : C_Interop/stdio.c.i
+
+C_Interop/stdio.s: C_Interop/stdio.c.s
+
+.PHONY : C_Interop/stdio.s
+
+# target to generate assembly for a file
+C_Interop/stdio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RhysOS.dir/build.make CMakeFiles/RhysOS.dir/C_Interop/stdio.c.s
+.PHONY : C_Interop/stdio.c.s
 
 # Help Target
 help:
@@ -557,51 +611,57 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... RhysOS"
-	@echo "... C/Clock.o"
-	@echo "... C/Clock.i"
-	@echo "... C/Clock.s"
-	@echo "... C/Cpu/Gdt.o"
-	@echo "... C/Cpu/Gdt.i"
-	@echo "... C/Cpu/Gdt.s"
-	@echo "... C/Cpu/Idt.o"
-	@echo "... C/Cpu/Idt.i"
-	@echo "... C/Cpu/Idt.s"
-	@echo "... C/Cpu/Interrupts.o"
-	@echo "... C/Cpu/Interrupts.i"
-	@echo "... C/Cpu/Interrupts.s"
-	@echo "... C/Cpu/Io.o"
-	@echo "... C/Cpu/Io.i"
-	@echo "... C/Cpu/Io.s"
-	@echo "... C/Cpu/Irq.o"
-	@echo "... C/Cpu/Irq.i"
-	@echo "... C/Cpu/Irq.s"
-	@echo "... C/Cpu/isr.o"
-	@echo "... C/Cpu/isr.i"
-	@echo "... C/Cpu/isr.s"
-	@echo "... C/Display.o"
-	@echo "... C/Display.i"
-	@echo "... C/Display.s"
-	@echo "... C/Keyboard.o"
-	@echo "... C/Keyboard.i"
-	@echo "... C/Keyboard.s"
-	@echo "... C/Maths.o"
-	@echo "... C/Maths.i"
-	@echo "... C/Maths.s"
-	@echo "... C/Memory.o"
-	@echo "... C/Memory.i"
-	@echo "... C/Memory.s"
-	@echo "... C/Mouse.o"
-	@echo "... C/Mouse.i"
-	@echo "... C/Mouse.s"
-	@echo "... C/Serial.o"
-	@echo "... C/Serial.i"
-	@echo "... C/Serial.s"
-	@echo "... C/String.o"
-	@echo "... C/String.i"
-	@echo "... C/String.s"
-	@echo "... C/main.o"
-	@echo "... C/main.i"
-	@echo "... C/main.s"
+	@echo "... CPP/Clock.o"
+	@echo "... CPP/Clock.i"
+	@echo "... CPP/Clock.s"
+	@echo "... CPP/Cpu/Gdt.o"
+	@echo "... CPP/Cpu/Gdt.i"
+	@echo "... CPP/Cpu/Gdt.s"
+	@echo "... CPP/Cpu/Idt.o"
+	@echo "... CPP/Cpu/Idt.i"
+	@echo "... CPP/Cpu/Idt.s"
+	@echo "... CPP/Cpu/Interrupts.o"
+	@echo "... CPP/Cpu/Interrupts.i"
+	@echo "... CPP/Cpu/Interrupts.s"
+	@echo "... CPP/Cpu/Io.o"
+	@echo "... CPP/Cpu/Io.i"
+	@echo "... CPP/Cpu/Io.s"
+	@echo "... CPP/Cpu/Irq.o"
+	@echo "... CPP/Cpu/Irq.i"
+	@echo "... CPP/Cpu/Irq.s"
+	@echo "... CPP/Cpu/isr.o"
+	@echo "... CPP/Cpu/isr.i"
+	@echo "... CPP/Cpu/isr.s"
+	@echo "... CPP/Display.o"
+	@echo "... CPP/Display.i"
+	@echo "... CPP/Display.s"
+	@echo "... CPP/Keyboard.o"
+	@echo "... CPP/Keyboard.i"
+	@echo "... CPP/Keyboard.s"
+	@echo "... CPP/Maths.o"
+	@echo "... CPP/Maths.i"
+	@echo "... CPP/Maths.s"
+	@echo "... CPP/Memory.o"
+	@echo "... CPP/Memory.i"
+	@echo "... CPP/Memory.s"
+	@echo "... CPP/Mouse.o"
+	@echo "... CPP/Mouse.i"
+	@echo "... CPP/Mouse.s"
+	@echo "... CPP/Queue.o"
+	@echo "... CPP/Queue.i"
+	@echo "... CPP/Queue.s"
+	@echo "... CPP/Serial.o"
+	@echo "... CPP/Serial.i"
+	@echo "... CPP/Serial.s"
+	@echo "... CPP/Str.o"
+	@echo "... CPP/Str.i"
+	@echo "... CPP/Str.s"
+	@echo "... CPP/main.o"
+	@echo "... CPP/main.i"
+	@echo "... CPP/main.s"
+	@echo "... C_Interop/stdio.o"
+	@echo "... C_Interop/stdio.i"
+	@echo "... C_Interop/stdio.s"
 .PHONY : help
 
 

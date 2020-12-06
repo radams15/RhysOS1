@@ -77,240 +77,270 @@ include CMakeFiles/RhysOS.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/RhysOS.dir/flags.make
 
-CMakeFiles/RhysOS.dir/C/String.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/String.cpp.o: ../C/String.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RhysOS.dir/C/String.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/String.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/String.cpp
+CMakeFiles/RhysOS.dir/CPP/Str.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Str.cpp.o: ../CPP/Str.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Str.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Str.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Str.cpp
 
-CMakeFiles/RhysOS.dir/C/String.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/String.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/String.cpp > CMakeFiles/RhysOS.dir/C/String.cpp.i
+CMakeFiles/RhysOS.dir/CPP/Str.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Str.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Str.cpp > CMakeFiles/RhysOS.dir/CPP/Str.cpp.i
 
-CMakeFiles/RhysOS.dir/C/String.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/String.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/String.cpp -o CMakeFiles/RhysOS.dir/C/String.cpp.s
+CMakeFiles/RhysOS.dir/CPP/Str.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Str.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Str.cpp -o CMakeFiles/RhysOS.dir/CPP/Str.cpp.s
 
-CMakeFiles/RhysOS.dir/C/Display.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Display.cpp.o: ../C/Display.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RhysOS.dir/C/Display.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Display.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Display.cpp
+CMakeFiles/RhysOS.dir/CPP/Display.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Display.cpp.o: ../CPP/Display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Display.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Display.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Display.cpp
 
-CMakeFiles/RhysOS.dir/C/Display.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Display.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Display.cpp > CMakeFiles/RhysOS.dir/C/Display.cpp.i
+CMakeFiles/RhysOS.dir/CPP/Display.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Display.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Display.cpp > CMakeFiles/RhysOS.dir/CPP/Display.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Display.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Display.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Display.cpp -o CMakeFiles/RhysOS.dir/C/Display.cpp.s
+CMakeFiles/RhysOS.dir/CPP/Display.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Display.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Display.cpp -o CMakeFiles/RhysOS.dir/CPP/Display.cpp.s
 
-CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.o: ../C/Cpu/Interrupts.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Interrupts.cpp
+CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.o: ../CPP/Cpu/Interrupts.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Interrupts.cpp
 
-CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Interrupts.cpp > CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.i
+CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Interrupts.cpp > CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Interrupts.cpp -o CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.s
+CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Interrupts.cpp -o CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.s
 
-CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.o: ../C/Cpu/Io.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Io.cpp
+CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.o: ../CPP/Cpu/Io.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Io.cpp
 
-CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Io.cpp > CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.i
+CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Io.cpp > CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Io.cpp -o CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.s
+CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Io.cpp -o CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.s
 
-CMakeFiles/RhysOS.dir/C/main.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/main.cpp.o: ../C/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RhysOS.dir/C/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/main.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/main.cpp
+CMakeFiles/RhysOS.dir/CPP/main.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/main.cpp.o: ../CPP/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RhysOS.dir/CPP/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/main.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/main.cpp
 
-CMakeFiles/RhysOS.dir/C/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/main.cpp > CMakeFiles/RhysOS.dir/C/main.cpp.i
+CMakeFiles/RhysOS.dir/CPP/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/main.cpp > CMakeFiles/RhysOS.dir/CPP/main.cpp.i
 
-CMakeFiles/RhysOS.dir/C/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/main.cpp -o CMakeFiles/RhysOS.dir/C/main.cpp.s
+CMakeFiles/RhysOS.dir/CPP/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/main.cpp -o CMakeFiles/RhysOS.dir/CPP/main.cpp.s
 
-CMakeFiles/RhysOS.dir/C/Maths.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Maths.cpp.o: ../C/Maths.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RhysOS.dir/C/Maths.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Maths.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Maths.cpp
+CMakeFiles/RhysOS.dir/CPP/Maths.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Maths.cpp.o: ../CPP/Maths.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Maths.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Maths.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Maths.cpp
 
-CMakeFiles/RhysOS.dir/C/Maths.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Maths.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Maths.cpp > CMakeFiles/RhysOS.dir/C/Maths.cpp.i
+CMakeFiles/RhysOS.dir/CPP/Maths.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Maths.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Maths.cpp > CMakeFiles/RhysOS.dir/CPP/Maths.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Maths.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Maths.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Maths.cpp -o CMakeFiles/RhysOS.dir/C/Maths.cpp.s
+CMakeFiles/RhysOS.dir/CPP/Maths.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Maths.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Maths.cpp -o CMakeFiles/RhysOS.dir/CPP/Maths.cpp.s
 
-CMakeFiles/RhysOS.dir/C/Serial.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Serial.cpp.o: ../C/Serial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RhysOS.dir/C/Serial.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Serial.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Serial.cpp
+CMakeFiles/RhysOS.dir/CPP/Serial.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Serial.cpp.o: ../CPP/Serial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Serial.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Serial.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Serial.cpp
 
-CMakeFiles/RhysOS.dir/C/Serial.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Serial.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Serial.cpp > CMakeFiles/RhysOS.dir/C/Serial.cpp.i
+CMakeFiles/RhysOS.dir/CPP/Serial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Serial.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Serial.cpp > CMakeFiles/RhysOS.dir/CPP/Serial.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Serial.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Serial.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Serial.cpp -o CMakeFiles/RhysOS.dir/C/Serial.cpp.s
+CMakeFiles/RhysOS.dir/CPP/Serial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Serial.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Serial.cpp -o CMakeFiles/RhysOS.dir/CPP/Serial.cpp.s
 
-CMakeFiles/RhysOS.dir/C/Memory.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Memory.cpp.o: ../C/Memory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RhysOS.dir/C/Memory.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Memory.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Memory.cpp
+CMakeFiles/RhysOS.dir/CPP/Memory.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Memory.cpp.o: ../CPP/Memory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Memory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Memory.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Memory.cpp
 
-CMakeFiles/RhysOS.dir/C/Memory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Memory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Memory.cpp > CMakeFiles/RhysOS.dir/C/Memory.cpp.i
+CMakeFiles/RhysOS.dir/CPP/Memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Memory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Memory.cpp > CMakeFiles/RhysOS.dir/CPP/Memory.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Memory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Memory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Memory.cpp -o CMakeFiles/RhysOS.dir/C/Memory.cpp.s
+CMakeFiles/RhysOS.dir/CPP/Memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Memory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Memory.cpp -o CMakeFiles/RhysOS.dir/CPP/Memory.cpp.s
 
-CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.o: ../C/Cpu/isr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Cpu/isr.cpp
+CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.o: ../CPP/Cpu/isr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/isr.cpp
 
-CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Cpu/isr.cpp > CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.i
+CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/isr.cpp > CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Cpu/isr.cpp -o CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.s
+CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/isr.cpp -o CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.s
 
-CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.o: ../C/Cpu/Gdt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Gdt.cpp
+CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.o: ../CPP/Cpu/Gdt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Gdt.cpp
 
-CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Gdt.cpp > CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.i
+CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Gdt.cpp > CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Gdt.cpp -o CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.s
+CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Gdt.cpp -o CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.s
 
-CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.o: ../C/Cpu/Idt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Idt.cpp
+CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.o: ../CPP/Cpu/Idt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Idt.cpp
 
-CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Idt.cpp > CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.i
+CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Idt.cpp > CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Idt.cpp -o CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.s
+CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Idt.cpp -o CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.s
 
-CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.o: ../C/Cpu/Irq.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Irq.cpp
+CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.o: ../CPP/Cpu/Irq.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Irq.cpp
 
-CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Irq.cpp > CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.i
+CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Irq.cpp > CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Cpu/Irq.cpp -o CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.s
+CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Cpu/Irq.cpp -o CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.s
 
-CMakeFiles/RhysOS.dir/C/Clock.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Clock.cpp.o: ../C/Clock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RhysOS.dir/C/Clock.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Clock.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Clock.cpp
+CMakeFiles/RhysOS.dir/CPP/Clock.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Clock.cpp.o: ../CPP/Clock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Clock.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Clock.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Clock.cpp
 
-CMakeFiles/RhysOS.dir/C/Clock.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Clock.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Clock.cpp > CMakeFiles/RhysOS.dir/C/Clock.cpp.i
+CMakeFiles/RhysOS.dir/CPP/Clock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Clock.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Clock.cpp > CMakeFiles/RhysOS.dir/CPP/Clock.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Clock.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Clock.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Clock.cpp -o CMakeFiles/RhysOS.dir/C/Clock.cpp.s
+CMakeFiles/RhysOS.dir/CPP/Clock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Clock.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Clock.cpp -o CMakeFiles/RhysOS.dir/CPP/Clock.cpp.s
 
-CMakeFiles/RhysOS.dir/C/Keyboard.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Keyboard.cpp.o: ../C/Keyboard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RhysOS.dir/C/Keyboard.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Keyboard.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Keyboard.cpp
+CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.o: ../CPP/Keyboard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Keyboard.cpp
 
-CMakeFiles/RhysOS.dir/C/Keyboard.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Keyboard.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Keyboard.cpp > CMakeFiles/RhysOS.dir/C/Keyboard.cpp.i
+CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Keyboard.cpp > CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Keyboard.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Keyboard.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Keyboard.cpp -o CMakeFiles/RhysOS.dir/C/Keyboard.cpp.s
+CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Keyboard.cpp -o CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.s
 
-CMakeFiles/RhysOS.dir/C/Mouse.cpp.o: CMakeFiles/RhysOS.dir/flags.make
-CMakeFiles/RhysOS.dir/C/Mouse.cpp.o: ../C/Mouse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RhysOS.dir/C/Mouse.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/C/Mouse.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/C/Mouse.cpp
+CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.o: ../CPP/Mouse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Mouse.cpp
 
-CMakeFiles/RhysOS.dir/C/Mouse.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/C/Mouse.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C/Mouse.cpp > CMakeFiles/RhysOS.dir/C/Mouse.cpp.i
+CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Mouse.cpp > CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.i
 
-CMakeFiles/RhysOS.dir/C/Mouse.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/C/Mouse.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C/Mouse.cpp -o CMakeFiles/RhysOS.dir/C/Mouse.cpp.s
+CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Mouse.cpp -o CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.s
+
+CMakeFiles/RhysOS.dir/CPP/Queue.cpp.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/CPP/Queue.cpp.o: ../CPP/Queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RhysOS.dir/CPP/Queue.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RhysOS.dir/CPP/Queue.cpp.o -c /home/rhys/scripts/Projects/RhysOS2/CPP/Queue.cpp
+
+CMakeFiles/RhysOS.dir/CPP/Queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RhysOS.dir/CPP/Queue.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/CPP/Queue.cpp > CMakeFiles/RhysOS.dir/CPP/Queue.cpp.i
+
+CMakeFiles/RhysOS.dir/CPP/Queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RhysOS.dir/CPP/Queue.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/CPP/Queue.cpp -o CMakeFiles/RhysOS.dir/CPP/Queue.cpp.s
+
+CMakeFiles/RhysOS.dir/C_Interop/stdio.c.o: CMakeFiles/RhysOS.dir/flags.make
+CMakeFiles/RhysOS.dir/C_Interop/stdio.c.o: ../C_Interop/stdio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/RhysOS.dir/C_Interop/stdio.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RhysOS.dir/C_Interop/stdio.c.o   -c /home/rhys/scripts/Projects/RhysOS2/C_Interop/stdio.c
+
+CMakeFiles/RhysOS.dir/C_Interop/stdio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RhysOS.dir/C_Interop/stdio.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rhys/scripts/Projects/RhysOS2/C_Interop/stdio.c > CMakeFiles/RhysOS.dir/C_Interop/stdio.c.i
+
+CMakeFiles/RhysOS.dir/C_Interop/stdio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RhysOS.dir/C_Interop/stdio.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rhys/scripts/Projects/RhysOS2/C_Interop/stdio.c -o CMakeFiles/RhysOS.dir/C_Interop/stdio.c.s
 
 # Object files for target RhysOS
 RhysOS_OBJECTS = \
-"CMakeFiles/RhysOS.dir/C/String.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/Display.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/main.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/Maths.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/Serial.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/Memory.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/Clock.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/Keyboard.cpp.o" \
-"CMakeFiles/RhysOS.dir/C/Mouse.cpp.o"
+"CMakeFiles/RhysOS.dir/CPP/Str.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/Display.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/main.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/Maths.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/Serial.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/Memory.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/Clock.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.o" \
+"CMakeFiles/RhysOS.dir/CPP/Queue.cpp.o" \
+"CMakeFiles/RhysOS.dir/C_Interop/stdio.c.o"
 
 # External object files for target RhysOS
 RhysOS_EXTERNAL_OBJECTS =
 
-RhysOS: CMakeFiles/RhysOS.dir/C/String.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/Display.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/Cpu/Interrupts.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/Cpu/Io.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/main.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/Maths.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/Serial.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/Memory.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/Cpu/isr.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/Cpu/Gdt.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/Cpu/Idt.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/Cpu/Irq.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/Clock.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/Keyboard.cpp.o
-RhysOS: CMakeFiles/RhysOS.dir/C/Mouse.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Str.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Display.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Cpu/Interrupts.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Cpu/Io.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/main.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Maths.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Serial.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Memory.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Cpu/isr.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Cpu/Gdt.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Cpu/Idt.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Cpu/Irq.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Clock.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Keyboard.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Mouse.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/CPP/Queue.cpp.o
+RhysOS: CMakeFiles/RhysOS.dir/C_Interop/stdio.c.o
 RhysOS: CMakeFiles/RhysOS.dir/build.make
 RhysOS: CMakeFiles/RhysOS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable RhysOS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rhys/scripts/Projects/RhysOS2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable RhysOS"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RhysOS.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

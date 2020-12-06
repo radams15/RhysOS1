@@ -7,7 +7,7 @@
 
 #include "Types.h"
 #include "Maths.h"
-#include "String.h"
+#include "Str.h"
 
 #include <stdarg.h>
 
@@ -52,6 +52,7 @@ namespace Display {
     void printi(uint32 i);
 
     void print(const char* text, ...);
+    void print(const char* text, va_list args);
 
     void shift_up();
 

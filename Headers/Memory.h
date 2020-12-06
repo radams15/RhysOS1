@@ -6,17 +6,22 @@
 #define RHYSOS_MEMORY_H
 
 #include <Types.h>
+#include <Serial.h>
 
 extern uint32 end; // in linker.ld
 
 namespace Memory{
-
     void memset(uint8* dest, uint8 val, uint32 len);
+    void memncpy(void* a, void* b, uint32 len);
 
-    uint32 kmalloc(uint32 size);
-    uint32 kmalloc_align(uint32 size);
-    uint32 kmalloc_align_phys(uint32 size, uint32* physical_buf);
-    uint32 kmalloc_phys(uint32 size, bool align, uint32* physical_buf);
+    void* kcalloc(uint32 length, uint32 size);
+
+    void* kmalloc(uint32 size);
+    void* kmalloc_align(uint32 size);
+    void* kmalloc_align_phys(uint32 size, uint32* physical_buf);
+    void* kmalloc_phys(uint32 size, bool align, uint32* physical_buf);
+
+    void* krealloc(void* ptr, uint32 new_size);
 
     void kfree(uint32 ptr);
 }

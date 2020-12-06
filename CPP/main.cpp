@@ -4,13 +4,14 @@
 #include <Idt.h>
 #include <Gdt.h>
 #include <Irq.h>
+#include <Queue.h>
 
 #include "Clock.h"
 
 #include "Keyboard.h"
-#include "Mouse.h"
 
 bool kernel_loop(){
+
     return true;
 }
 
@@ -25,12 +26,20 @@ int main(){
     Clock::init(50);
 
     Keyboard::init();
-    Mouse::init();
 
     Irq::enable();
 
     Serial::write("\n\n###############Start User###############\n\n");
     Display::print("Boot Complete!\n");
+
+    /*Queue q(4);
+    for(uint16 i=0 ; i<10 ; i++){
+        q.add(i);
+    }
+
+    for(uint16 i=0 ; i<10 ; i++){
+        Display::print("%d\n", q.pop());
+    }*/
 
     while(kernel_loop()){}
 

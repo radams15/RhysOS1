@@ -2,25 +2,32 @@ cmake_minimum_required(VERSION 3.16)
 project(RhysOS)
 
 set(CMAKE_C_STANDARD 11)
-set(CMAKE_SOURCE_DIR C)
+set(CMAKE_SOURCE_DIR CPP)
 
-include_directories(C)
+include_directories(CPP)
 include_directories(Headers)
+include_directories(C_Interop)
+
 
 add_executable(
         RhysOS
-        C/String.cpp
-        C/Display.cpp
-        C/Cpu/Interrupts.cpp
-        C/Cpu/Io.cpp
-        C/main.cpp
-        C/Maths.cpp
-        C/Serial.cpp
-        C/Memory.cpp
-        C/Cpu/isr.cpp
-        C/Cpu/Gdt.cpp
-        C/Cpu/Idt.cpp
-        C/Cpu/Irq.cpp
-        C/Clock.cpp
-        C/Keyboard.cpp
-        C/Mouse.cpp)
+        CPP/Str.cpp
+        CPP/Display.cpp
+        CPP/Cpu/Interrupts.cpp
+        CPP/Cpu/Io.cpp
+        CPP/main.cpp
+        CPP/Maths.cpp
+        CPP/Serial.cpp
+        CPP/Memory.cpp
+        CPP/Cpu/isr.cpp
+        CPP/Cpu/Gdt.cpp
+        CPP/Cpu/Idt.cpp
+        CPP/Cpu/Irq.cpp
+        CPP/Clock.cpp
+        CPP/Keyboard.cpp
+        CPP/Str.cpp
+        CPP/Mouse.cpp
+        CPP/Queue.cpp
+
+        C_Interop/stdio.c
+)
